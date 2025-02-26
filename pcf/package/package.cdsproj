@@ -49,7 +49,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\..\src\\personalityTest-pcf\pcf.pcfproj" />
+    <ProjectReference Include="..\personalityTest-pcf\pcf.pcfproj" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
