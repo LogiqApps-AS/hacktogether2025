@@ -207,5 +207,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ${{ env.projectfile }}/bin/${{ env.buildType }}/package.zip
-          asset_name: ${{ steps.solution-unique-name.outputs.info }}_${{ steps.solution-version.outputs.info }}_managed.zip
+          asset_name: ${{ steps.solution-unique-name.outputs.info }}_${{ steps.set_version.outputs.version }}_managed.zip
           asset_content_type: application/zip
