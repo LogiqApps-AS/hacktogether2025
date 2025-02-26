@@ -1,8 +1,7 @@
-name: Build and Deploy Dataverse Package
+name: Build and Release Dataverse Package
 
 on:
-  release:
-    types: [published]
+  workflow_dispatch:
   push:
     branches: [main]
     paths-ignore:
