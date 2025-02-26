@@ -6,7 +6,7 @@ on:
   push:
     branches: [main]
     paths-ignore:
-      - '**/README.md'
+      - "**/README.md"
   pull_request:
     branches: [main]
 
@@ -51,72 +51,79 @@ jobs:
       - name: Pack LogiqAppsEP Solution as Managed
         uses: microsoft/powerplatform-actions/pack-solution@v1
         with:
-          solution-file: '${{runner.temp}}/build/LogiqAppsEP_${{ steps.set_version.outputs.version }}_Managed.zip'
-          solution-folder: 'solutions/LogiqAppsEP'
-          solution-type: 'Managed'
-      
+          solution-file: "${{runner.temp}}/build/LogiqAppsEP_${{ steps.set_version.outputs.version }}_Managed.zip"
+          solution-folder: "solutions/LogiqAppsEP"
+          solution-type: "Managed"
+
       - name: Pack LogiqAppsEP Solution as Unmanaged
         uses: microsoft/powerplatform-actions/pack-solution@v1
         with:
-          solution-file: '${{runner.temp}}/build/LogiqAppsEP_${{ steps.set_version.outputs.version }}_Unmanaged.zip'
-          solution-folder: 'solutions/LogiqAppsEP'
-          solution-type: 'Unmanaged'
+          solution-file: "${{runner.temp}}/build/LogiqAppsEP_${{ steps.set_version.outputs.version }}_Unmanaged.zip"
+          solution-folder: "solutions/LogiqAppsEP"
+          solution-type: "Unmanaged"
 
       - name: Pack LogiqAppsPDP Solution as Managed
         uses: microsoft/powerplatform-actions/pack-solution@v1
         with:
-          solution-file: '${{runner.temp}}/build/LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Managed.zip'
-          solution-folder: 'solutions/LogiqAppsPDP'
-          solution-type: 'Managed'
-        
+          solution-file: "${{runner.temp}}/build/LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Managed.zip"
+          solution-folder: "solutions/LogiqAppsPDP"
+          solution-type: "Managed"
+
       - name: Pack LogiqAppsPDP Solution as Unmanaged
         uses: microsoft/powerplatform-actions/pack-solution@v1
         with:
-          solution-file: '${{runner.temp}}/build/LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Unmanaged.zip'
-          solution-folder: 'solutions/LogiqAppsPDP'
-          solution-type: 'Unmanaged'
+          solution-file: "${{runner.temp}}/build/LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Unmanaged.zip"
+          solution-folder: "solutions/LogiqAppsPDP"
+          solution-type: "Unmanaged"
 
       - name: Publish Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: packaged-solutions
-          path: '${{runner.temp}}/build/*.zip'
+          path: "${{runner.temp}}/build/*.zip"
           overwrite: true
-  release:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    
-    - name: Download Artifacts
-      uses: actions/download-artifact@v4
-      with:
-        name: packaged-solutions
-        path: ./release-assets
+      # release:
+      #   needs: build
+      #   runs-on: ubuntu-latest
+      #   steps:
 
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: packaged-solutions
+          path: ./release-assets
 
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ steps.set_version.outputs.version }}
-        draft: true
-        prerelease: false
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ steps.set_version.outputs.version }}
+          draft: true
+          prerelease: false
 
-    - name: Upload Release Assets
-      env:
-        GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
-      run: |
-          $assets = Get-ChildItem -Path ./release-assets -Filter *.zip
-          foreach ($asset in $assets) {
-            Write-Output "Uploading $asset"
-            actions/upload-release-asset@v1
-            with:
-              upload_url: ${{ steps.create_release.outputs.upload_url }}
-              asset_path: $asset.FullName
-              asset_name: $asset.Name
-              asset_content_type: application/zip
-          }
-      shell: pwsh
+      - name: Upload Release Asset
+        id: release-managed-solution1
+        uses: actions/upload-release-asset@v1
+        if: steps.create_release.conclusion == 'success'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{runner.temp}}/build/LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Managed.zip
+          asset_name: LogiqAppsPDP_${{ steps.set_version.outputs.version }}_${{ steps.solution-version.outputs.info }}_Managed.zip
+          asset_content_type: application/zip
+
+      - name: Upload Release Asset
+        id: release-managed-solution2
+        uses: actions/upload-release-asset@v1
+        if: steps.create_release.conclusion == 'success'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{runner.temp}}/build/LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Unmanaged.zip
+          asset_name: LogiqAppsPDP_${{ steps.set_version.outputs.version }}_${{ steps.solution-version.outputs.info }}_Unmanaged.zip
+          asset_content_type: application/zip
