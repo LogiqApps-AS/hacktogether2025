@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="LA" constructor="ActivityTimeline" version="0.0.1" display-name-key="ActivityTimeline" description-key="ActivityTimeline description" control-type="standard" >
+
+    <external-service-usage enabled="false">
+
+    </external-service-usage>
+    <data-set name="DataSet" display-name-key="Entity DataSet">
+
+    </data-set>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="../dist/output.css" order="1" />
+    </resources>
+    
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    
+  </control>
+</manifest>
