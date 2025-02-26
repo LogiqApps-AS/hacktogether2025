@@ -1,101 +1,74 @@
-name: Build Dataverse Packages
+name: Build and Deploy Dataverse Package
 
 on:
   release:
     types: [published]
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**/README.md'
+  pull_request:
+    branches: [main]
+
 env:
   GITHUB_TOKEN: ${{ secrets.TOKEN }}
   buildType: Release
+  projectfile: src/package
+  msbuildtarget: src/package/src
+  npm_project_dir: ./solutions/LogiqAppsPDP_PCF
+
 jobs:
   build:
     runs-on: windows-latest
-
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install Power Platform Tools
         uses: microsoft/powerplatform-actions/actions-install@v1
-      
-      - name: Parse version from tag
-        id: parse_version
+
+      - name: Set Build Version
+        id: set_version
         run: |
-          $tag = "${{ github.ref_name }}"
-          $major = 0
-          $minor = 0
-          $patch = 0
-          $build = 0
-          if ($tag -match "v.(\d+)\.(\d+)\.(\d+)\.(\d+)") {
-            $major = $matches[1]
-            $minor = $matches[2]
-            $patch = $matches[3]
-            $build = $matches[4]
-          }
-          echo "##[set-output name=major;]$major"
-          echo "##[set-output name=minor;]$minor"
-          echo "##[set-output name=patch;]$patch"
-          echo "##[set-output name=build;]$build"
+          $date = Get-Date -Format "yyyy.MM.dd"
+          $buildNumber = $env:GITHUB_RUN_NUMBER
+          $version = "$date.$buildNumber"
+          echo "##[set-output name=version;]$version"
+          echo "Build version set to: $version"
         shell: pwsh
 
       - name: Update Solution Version
-        id: update_version
         run: |
-          $version = "${{ steps.parse_version.outputs.major }}.${{ steps.parse_version.outputs.minor }}.${{ steps.parse_version.outputs.patch }}.${{ steps.parse_version.outputs.build }}"
-          Write-Host "##[set-output name=version;]$version"
-          Write-Host "Current version: $version"
-          $xml = [xml](Get-Content package/other/Solution.xml)
-          $xml.ImportExportXml.SolutionManifest.Version = $version
-          $xml.Save("package/other/Solution.xml")
+          $version = "${{ steps.set_version.outputs.version }}"
+          $xmlFiles = Get-ChildItem -Path ./solutions -Recurse -Filter Solution.xml
+          foreach ($xmlFile in $xmlFiles) {
+            [xml]$xml = Get-Content $xmlFile.FullName
+            $xml.ImportExportXml.SolutionManifest.Version = $version
+            $xml.Save($xmlFile.FullName)
+          }
         shell: pwsh
 
-      - name: Get Solution Unique Name
-        id: solution-unique-name
-        uses: mavrosxristoforos/get-xml-info@1.0
-        with:
-          xml-file: package/Other/Solution.xml
-          xpath: "//ImportExportXml/SolutionManifest/UniqueName"
+      - name: Pack All Solutions As Managed
+        run: |
+          $solutions = Get-ChildItem -Path ./solutions -Directory
+          foreach ($solution in $solutions) {
+            Write-Host "Packing solution: $($solution.Name)"
+            & "pac" solution pack --zipfile "./build/$($solution.Name)_${{ steps.set_version.outputs.version }}.zip" --folder "$($solution.FullName)" --packagetype Managed
+          }
+        shell: pwsh
 
-      - name: Get Solution Version
-        id: solution-version
-        uses: mavrosxristoforos/get-xml-info@1.0
-        with:
-          xml-file: package/Other/Solution.xml
-          xpath: "//ImportExportXml/SolutionManifest/Version"
+      - name: Pack All Solutions As Unmanaged
+        run: |
+          $solutions = Get-ChildItem -Path ./solutions -Directory
+          foreach ($solution in $solutions) {
+            Write-Host "Packing solution: $($solution.Name)"
+            & "pac" solution pack --zipfile "./build/$($solution.Name)_${{ steps.set_version.outputs.version }}.zip" --folder "$($solution.FullName)" --packagetype Unmanaged
+          }
+        shell: pwsh
 
-      - name: Pack solution as Managed
-        uses: microsoft/powerplatform-actions/pack-solution@v1
-        env: 
-          fileName: "${{ steps.solution-unique-name.outputs.info }}_${{ steps.solution-version.outputs.info }}_managed.zip"
+      - name: Publish Artifacts
+        uses: actions/upload-artifact@v3
         with:
-          solution-file: "./build/${{ env.fileName }}"
-          solution-folder: "./solutions/LogiqAppsPDP"
-          solution-type: "Managed"
-
-      - name: Pack solution as Unmanaged
-        uses: microsoft/powerplatform-actions/pack-solution@v1
-        env: 
-          fileName: "${{ steps.solution-unique-name.outputs.info }}_${{ steps.solution-version.outputs.info }}.zip"
-        with:
-          solution-file: "./build/${{ env.fileName }}"
-          solution-folder: "./solutions/LogiqAppsPDP"
-          solution-type: "Unmanaged"
-
-      - name: Upload Managed solution to release
-        uses: actions/upload-release-asset@v1
-        env: 
-          fileName: "${{ steps.solution-unique-name.outputs.info }}_${{ steps.solution-version.outputs.info }}_managed.zip"
-        with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: "./build/${{ env.fileName}}"
-          asset_name: ${{ env.fileName}}
-          asset_content_type: application/zip
-
-      - name: Upload Unnmanaged solution to release
-        uses: actions/upload-release-asset@v1
-        env: 
-          fileName: "${{ steps.solution-unique-name.outputs.info }}_${{ steps.solution-version.outputs.info }}.zip"
-        with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: "./build/${{ env.fileName}}"
-          asset_name: ${{ env.fileName}}
-          asset_content_type: application/zip
+          name: packaged-solutions
+          path: ./build/*.zip
+          overwrite: true
