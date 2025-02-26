@@ -54,8 +54,6 @@ jobs:
           xml-file: ${{ env.projectfile }}/src/Other/Solution.xml
           xpath: "//ImportExportXml/SolutionManifest/Version"     
       
-      - name: Build solution with dotnet
-        run: cd ${{ env.projectfile }} && dotnet build --configuration ${{ env.buildType }}
 
       - name: Set Build Version
         id: set_version
@@ -108,6 +106,9 @@ jobs:
               }
           }
         shell: pwsh
+
+      - name: Build solution with dotnet
+        run: cd ${{ env.projectfile }} && dotnet build --configuration ${{ env.buildType }}
 
       - name: Pack LogiqAppsEP Solution as Managed
         uses: microsoft/powerplatform-actions/pack-solution@v1
