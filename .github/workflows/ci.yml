@@ -20,12 +20,43 @@ env:
 jobs:
   build:
     runs-on: windows-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Install Power Platform Tools
         uses: microsoft/powerplatform-actions/actions-install@v1
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.x' # Specify the version you need
+
+      - name: Get PCF Solution Unique Name
+        id: solution-unique-name
+        uses: mavrosxristoforos/get-xml-info@1.0
+        with:
+          xml-file: ${{ env.projectfile }}/src/Other/Solution.xml
+          xpath: "//ImportExportXml/SolutionManifest/UniqueName"
+
+      - name: Get PCF Solution Version
+        id: solution-version
+        uses: mavrosxristoforos/get-xml-info@1.0
+        with:
+          xml-file: ${{ env.projectfile }}/src/Other/Solution.xml
+          xpath: "//ImportExportXml/SolutionManifest/Version"     
+      
+      - name: Build solution with dotnet
+        run: cd ${{ env.projectfile }} && dotnet build --configuration ${{ env.buildType }}
 
       - name: Set Build Version
         id: set_version
@@ -76,22 +107,18 @@ jobs:
           solution-folder: "solutions/LogiqAppsPDP"
           solution-type: "Unmanaged"
 
-      - name: Publish Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: packaged-solutions
-          path: "${{runner.temp}}/build/*.zip"
-          overwrite: true
-      # release:
-      #   needs: build
-      #   runs-on: ubuntu-latest
-      #   steps:
+      # - name: Publish Artifacts
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: packaged-solutions
+      #     path: "${{runner.temp}}/build/*.zip"
+      #     overwrite: true
 
-      - name: Download Artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: packaged-solutions
-          path: ./release-assets
+      # - name: Download Artifacts
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: packaged-solutions
+      #     path: ./release-assets
 
       - name: Create Release
         id: create_release
@@ -104,7 +131,7 @@ jobs:
           draft: true
           prerelease: false
 
-      - name: Upload Release Asset
+      - name: Upload LogiqAppsPDP Managed Release Asset
         id: release-managed-solution1
         uses: actions/upload-release-asset@v1
         if: steps.create_release.conclusion == 'success'
@@ -116,7 +143,7 @@ jobs:
           asset_name: LogiqAppsPDP_${{ steps.set_version.outputs.version }}_${{ steps.solution-version.outputs.info }}_Managed.zip
           asset_content_type: application/zip
 
-      - name: Upload Release Asset
+      - name: Upload LogiqAppsPDP Unmanaged Release Asset
         id: release-managed-solution2
         uses: actions/upload-release-asset@v1
         if: steps.create_release.conclusion == 'success'
@@ -126,4 +153,40 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ${{runner.temp}}/build/LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Unmanaged.zip
           asset_name: LogiqAppsPDP_${{ steps.set_version.outputs.version }}_${{ steps.solution-version.outputs.info }}_Unmanaged.zip
+          asset_content_type: application/zip
+
+      - name: Upload LogiqAppsEP Managed Release Asset
+        id: release-managed-solution3
+        uses: actions/upload-release-asset@v1
+        if: steps.create_release.conclusion == 'success'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{runner.temp}}/build/LogiqAppsEP_${{ steps.set_version.outputs.version }}_Managed.zip
+          asset_name: LogiqAppsPDP_${{ steps.set_version.outputs.version }}_${{ steps.solution-version.outputs.info }}_Managed.zip
+          asset_content_type: application/zip
+
+      - name: Upload LogiqAppsEP Unanaged Release Asset
+        id: release-managed-solution4
+        uses: actions/upload-release-asset@v1
+        if: steps.create_release.conclusion == 'success'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{runner.temp}}/build/LogiqAppsEP_${{ steps.set_version.outputs.version }}_Unmanaged.zip
+          asset_name: LogiqAppsPDP_${{ steps.set_version.outputs.version }}_${{ steps.solution-version.outputs.info }}_Unmanaged.zip
+          asset_content_type: application/zip
+
+      - name: Upload PCF Asset ${{ steps.solution-unique-name.outputs.info }}_${{ steps.solution-version.outputs.info }}_managed.zip (Managed)
+        id: release-managed-solution
+        uses: actions/upload-release-asset@v1
+        if: steps.create_release.conclusion == 'success'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{ env.projectfile }}/bin/${{ env.buildType }}/${{ steps.solution-unique-name.outputs.info }}.zip
+          asset_name: ${{ steps.solution-unique-name.outputs.info }}_${{ steps.solution-version.outputs.info }}_managed.zip
           asset_content_type: application/zip
