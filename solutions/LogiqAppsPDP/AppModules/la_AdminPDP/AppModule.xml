@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>la_AdminPDP</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="la_gamificationprofile" />
+    <AppModuleComponent type="1" schemaName="la_learningplan" />
+    <AppModuleComponent type="1" schemaName="la_learningplanitem" />
+    <AppModuleComponent type="1" schemaName="la_learningplanitemtemplate" />
+    <AppModuleComponent type="1" schemaName="la_learningplantemplate" />
+    <AppModuleComponent type="1" schemaName="la_mentor" />
+    <AppModuleComponent type="1" schemaName="la_personalitytest" />
+    <AppModuleComponent type="1" schemaName="la_personalitytestresult" />
+    <AppModuleComponent type="1" schemaName="la_skillarea" />
+    <AppModuleComponent type="1" schemaName="la_skills" />
+    <AppModuleComponent type="26" id="{cf256fb3-cb00-46dc-a9a0-0646538daec8}" />
+    <AppModuleComponent type="26" id="{bc7d382c-2a79-423a-a208-80227d4c65c7}" />
+    <AppModuleComponent type="60" id="{6b551e6f-3ef1-ef11-9341-000d3ab55aad}" />
+    <AppModuleComponent type="60" id="{bbfffdbf-0da9-461c-a8dc-013855f9aa55}" />
+    <AppModuleComponent type="60" id="{ea0cf1d5-0f1e-40e4-92ac-16654842b2b9}" />
+    <AppModuleComponent type="60" id="{f97353b3-1fd3-48e2-b024-99545d44be8f}" />
+    <AppModuleComponent type="60" id="{fbcc4ac8-a3be-4c7c-bed7-d6e8dec33498}" />
+    <AppModuleComponent type="60" id="{f1b9156f-20b8-43c1-b8a9-de2ea407466b}" />
+    <AppModuleComponent type="60" id="{d751ce88-4023-4104-b86f-e996f0a772da}" />
+    <AppModuleComponent type="62" schemaName="la_AdminPDP" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Admin PDP" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Empower your business users to efficiently manage and customize learning plans and templates with Admin PDP. Streamline administrative tasks and enhance productivity through a centralized platform designed for seamless learning plan administration." languagecode="1033" />
+  </Descriptions>
+  <appsettings>
+    <appsetting settingdefinitionid.uniquename="AppChannel">
+      <iscustomizable>1</iscustomizable>
+      <value>1</value>
+    </appsetting>
+  </appsettings>
+</AppModule>

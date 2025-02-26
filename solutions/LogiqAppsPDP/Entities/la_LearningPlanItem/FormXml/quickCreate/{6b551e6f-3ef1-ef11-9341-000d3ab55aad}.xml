@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{6b551e6f-3ef1-ef11-9341-000d3ab55aad}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{aa4d467a-30a1-4add-8891-0a688cf5dfd4}" showlabel="false" name="New Tab" labelid="{417cd5dd-d3f6-4888-949f-07ba1267ffcb}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section showlabel="true" columns="1" showbar="false" IsUserDefined="false" labelwidth="130" id="{95a250ac-f132-4f4c-b70f-af311ebe26fd}" name="tab_1_column_1_section_1" labelid="{6d675a6c-c277-47ca-96bf-d3457a2c873f}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{de86312b-10b8-4526-8b0f-26ac604be8c9}" locklevel="0" colspan="1" rowspan="1" labelid="{9bf368dd-6e88-4aa4-92cd-92573b4ac77c}">
+                        <labels>
+                          <label description="Learning Plan" languagecode="1033" />
+                        </labels>
+                        <control id="la_learningplanid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="la_learningplanid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{df30c9bd-9d1d-4d55-aca9-bafad363f3cc}" locklevel="0" colspan="1" rowspan="1" labelid="{d6ff70c1-7f38-4e7a-8fc5-d7d00534eaf3}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="la_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="la_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e2f7f806-16ce-49c1-8713-597f9081478a}" locklevel="0" colspan="1" rowspan="1" labelid="{84dd1215-fc02-4e2c-852d-4fa24e2b5fc3}">
+                        <labels>
+                          <label description="Learning Plan Item Template" languagecode="1033" />
+                        </labels>
+                        <control id="la_learningplanitemtemplateid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="la_learningplanitemtemplateid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{8f4a0567-c33b-4c2a-b76e-4eb64f76e688}" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{82cddb64-817e-4fac-a928-5130c1e359db}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{63e7a685-380e-4b1b-99ae-98b5700970d5}" labelid="{098a67dc-31bf-4af1-b0f9-fd7fcd5e4618}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{7b0f51c4-96a7-42ba-8e62-7e3b055d4681}" name="tab_1_column_3_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{524ab825-b749-47a5-8397-fa6035ba9033}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3c8291b4-1826-4204-b770-cfd2b9ecf326}" labelid="{a383c439-4f56-4b6b-bcb0-a9fe4303da99}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Add New" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

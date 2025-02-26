@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{7c350eb6-a044-4303-b11e-abb951752624}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{3d4c63d2-d827-4648-ad3a-4449ca40acd5}" IsUserDefined="1" name="tab=general">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="25%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{a128d933-d508-4a26-862b-64d470981835}" name="section-general" columns="11">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{45e9b903-1ac6-42e0-b012-8d7a71e7de9f}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="la_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="la_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f1fc7d65-920a-44a0-9722-71275e089d7a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="la_parentskillid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="la_parentskillid" disabled="false" />
+                      </cell>
+                      <cell id="{fc346851-e786-4bab-a4bc-ef394ee3ab02}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="la_grade" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="la_grade" disabled="false" uniqueid="{375744d2-4cd9-4541-82a5-0e213231a4da}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{fb6f57a3-696f-4f06-9fec-52380794419b}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{9715e318-3524-4828-bbcb-529a6916894a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="la_skillareaid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="la_skillareaid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="_section_678" id="844a9d05-3714-4728-93b3-90efdfecdd59" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Related Skills" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{bf594e50-5fc2-4b8b-9f89-596438ba81c9}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1740345203474" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>la_skills_ParentSkillId_la_skills</RelationshipName>
+                            <TargetEntityType>la_skills</TargetEntityType>
+                            <ViewId>{3B44BB67-25F2-EF11-BE1F-7C1E528769D7}</ViewId>
+                            <ViewIds>{0A4C9E9A-2DD3-457A-B419-8B92CA3D5FCF},{3B44BB67-25F2-EF11-BE1F-7C1E528769D7}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{365e4243-fe63-438c-b208-105573d992bb}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{260927c8-bafb-4cdf-af30-7d0d3d92f236}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a430673c-4927-484f-8654-f9cc702fd51d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b8dd8770-2fc2-4f01-aec0-027c0425bba4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{64d73117-e82f-45f3-8f29-9ac56733ba3e}" colspan="1" rowspan="1">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{218b0c36-aaa3-44f5-8e52-cad8fffa86f9}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{3f86bdce-a270-4503-8548-43587257c8e8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f46e2dd6-1cae-40dc-b459-540c8569012f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{57dfdf36-7912-45a8-affa-9fb66b97ae84}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{375744d2-4cd9-4541-82a5-0e213231a4da}">
+          <customControl id="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}">
+            <parameters>
+              <datafieldname>la_grade</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="yn_YN.ColoredDropdown">
+            <parameters>
+              <value type="OptionSet">la_grade</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="yn_YN.ColoredDropdown">
+            <parameters>
+              <value type="OptionSet">la_grade</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="yn_YN.ColoredDropdown">
+            <parameters>
+              <value type="OptionSet">la_grade</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

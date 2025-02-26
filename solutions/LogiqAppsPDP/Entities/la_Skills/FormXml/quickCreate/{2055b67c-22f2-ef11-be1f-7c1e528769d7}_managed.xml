@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{2055b67c-22f2-ef11-be1f-7c1e528769d7}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{5de5a39d-a64d-4770-a070-0135285d1160}" showlabel="false" name="New Tab" labelid="{afbfffa2-4f87-4062-b87f-840c6656eaaf}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section showlabel="true" columns="1" showbar="false" IsUserDefined="false" labelwidth="130" id="{403cd05b-23b6-425f-a4f1-d7cd903a9d49}" name="tab_1_column_1_section_1" labelid="{ebacab64-3cfa-4391-944a-dbce283cef43}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ec8d6c98-2c40-4723-9cda-87e5e653cc98}" labelid="{55047412-e5f4-41bc-8f7b-c8a966cffcfc}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="la_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="la_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{76dc91e6-7c84-4f8b-9c51-89222093b579}" locklevel="0" colspan="1" rowspan="1" labelid="{4a99a0b5-ba3d-4735-8c79-46e5a4610376}">
+                        <labels>
+                          <label description="Skill Area" languagecode="1033" />
+                        </labels>
+                        <control id="la_skillareaid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="la_skillareaid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ebac4589-5b03-48a6-be95-db8a2b3ca4c4}" locklevel="0" colspan="1" rowspan="1" labelid="{3f33b12a-5949-463a-9eeb-561bc9a9df30}">
+                        <labels>
+                          <label description="Grade" languagecode="1033" />
+                        </labels>
+                        <control id="la_grade" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="la_grade" disabled="false" uniqueid="{10282be0-6529-4d15-9620-31ed21102fbf}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{c8f3cf1e-4c20-4db1-b8bf-9d62d5d3fe15}" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{3b199b27-6e95-410f-8ee2-72b695ed3f9e}">
+                  <labels>
+                    <label description="Hierarchy" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{13f5f0c6-52a4-4248-a72f-4511ea4de269}" labelid="{6bb15a3a-17d4-41a7-b3df-d553bf4cf5c4}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d9e0b6fe-a1fc-4cf4-ae65-db80f9adf088}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="la_parentskillid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="la_parentskillid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{5605c63a-396c-4e3e-b0ba-742f3207b8ce}" name="tab_1_column_3_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{f4fd0b12-edef-4384-a995-17bd984cb7cb}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{30db64b6-b554-47bc-99e8-4b221f27f690}" labelid="{2557a831-69de-4df7-bddb-eb41e0584dd2}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{10282be0-6529-4d15-9620-31ed21102fbf}">
+          <customControl id="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}">
+            <parameters>
+              <datafieldname>la_grade</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="-1" name="yn_YN.ColoredDropdown">
+            <parameters>
+              <value type="OptionSet">la_grade</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="kk_PCF.OptionSetButtons">
+            <parameters>
+              <sourceControl type="OptionSet">la_grade</sourceControl>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="kk_PCF.OptionSetButtons">
+            <parameters>
+              <sourceControl type="OptionSet">la_grade</sourceControl>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="kk_PCF.OptionSetButtons">
+            <parameters>
+              <sourceControl type="OptionSet">la_grade</sourceControl>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Add New" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

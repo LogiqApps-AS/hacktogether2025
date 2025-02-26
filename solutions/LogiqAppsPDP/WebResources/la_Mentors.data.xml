@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{c6db6f37-1bf2-ef11-be1f-7c1e5220b51b}</WebResourceId>
+  <Name>la_Mentors</Name>
+  <DisplayName>Mentors</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/la_MentorsC6DB6F37-1BF2-EF11-BE1F-7C1E5220B51B</FileName>
+</WebResource>

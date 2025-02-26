@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{290ca865-ac20-4857-ba42-ac8c4a1b40ba}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{2b613bcc-8304-4052-a77c-cf1bc92d2fad}" IsUserDefined="1" name="tab-general">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="25%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{79b42998-9798-418b-9bc1-01f3ac2d4376}" columns="1" name="section-general">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{eab27351-7c66-4d09-85bd-51e71a38d985}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="la_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="la_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1a7a91ae-9048-46d7-ba39-bb30e1831214}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Learning Plan Template" languagecode="1033" />
+                        </labels>
+                        <control id="header_la_learningplantemplateid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="la_learningplantemplateid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="_section_266" id="88e0eb5e-626a-4a09-9856-2f31d9a8678e" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Plan Items" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{9c1b439e-8820-4f8f-b72f-11502a7c293d}" rowspan="4" colspan="1" auto="true" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1740242846565" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>la_learningplanitem_LearningPlanId_la_learningplan</RelationshipName>
+                            <TargetEntityType>la_learningplanitem</TargetEntityType>
+                            <ViewId>{19E6FE20-4DDA-4E47-A39C-5B12A5217F38}</ViewId>
+                            <ViewIds>{19E6FE20-4DDA-4E47-A39C-5B12A5217F38}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{8f61b7b3-4339-48a6-b67d-20b5dc329093}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{b7af01fe-8fd8-4f27-9e79-8d6ace886945}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d30dbc82-3ba1-41c8-a952-14ed74df4398}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e0f29500-dbea-4d3a-a4a8-6add5f147ac3}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{0a3054f9-0811-4ae3-b2ad-4909bd9edfaa}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{0abd7dcb-1f75-4ba9-bf07-d8f1bdc1ce4b}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+            <cell id="{67cdfd70-ef4e-4af0-9fea-4538e18153e8}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{b2a2d00b-3c18-408f-8eac-3aead683374d}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{ca20ed84-8941-4d4c-9d4f-26af281609ca}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{eedcc45a-eac8-496f-9f93-361f9442ee7f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{53803188-c1b1-462b-828e-230a7de20750}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

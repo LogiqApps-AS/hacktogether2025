@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{bc7d382c-2a79-423a-a208-80227d4c65c7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="la_name" select="1" icon="1" preview="1">
+        <row name="result" id="la_learningplantemplateid">
+          <cell name="la_level" width="100" />
+          <cell name="la_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+        <controlDescriptions>
+          <controlDescription>
+            <customControl id="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+              <parameters />
+            </customControl>
+            <customControl formFactor="0" name="Microsoft.PowerApps.PowerAppsOneGrid">
+              <parameters>
+                <data-set name="Items">
+                  <ViewId>00000000-0000-0000-0000-000000000000</ViewId>
+                </data-set>
+                <AccessibleLabel type="SingleLine.Text" />
+                <EnableEditing static="true" type="Enum">no</EnableEditing>
+                <DisableChildItemsEditing static="true" type="Enum">no</DisableChildItemsEditing>
+                <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+                <EnableSorting static="true" type="Enum">yes</EnableSorting>
+                <EnableGrouping static="true" type="Enum">no</EnableGrouping>
+                <EnableAggregation static="true" type="Enum">no</EnableAggregation>
+                <EnableColumnMoving static="true" type="Enum">no</EnableColumnMoving>
+                <EnableMultipleSelection static="true" type="Enum">yes</EnableMultipleSelection>
+                <EnableRangeSelection static="true" type="Enum">yes</EnableRangeSelection>
+                <EnableJumpBar static="true" type="Enum">no</EnableJumpBar>
+                <EnablePagination static="true" type="Enum">no</EnablePagination>
+                <EnableDropdownColor static="true" type="Enum">yes</EnableDropdownColor>
+                <EnableStatusIcons static="true" type="Enum">yes</EnableStatusIcons>
+                <EnableTypeIcons static="true" type="Enum">yes</EnableTypeIcons>
+                <NavigationTypesAllowed static="true" type="Enum">all</NavigationTypesAllowed>
+                <ReflowBehavior static="true" type="Enum">Reflow</ReflowBehavior>
+                <ContextualLookupColumnFilters static="true" type="Enum">yes</ContextualLookupColumnFilters>
+                <LookupFilterBeginsWith static="true" type="Enum">no</LookupFilterBeginsWith>
+                <GridCustomizerControlFullName type="SingleLine.Text" />
+                <EnableStatusColumn static="true" type="Enum">yes</EnableStatusColumn>
+              </parameters>
+            </customControl>
+            <customControl formFactor="1" name="Microsoft.PowerApps.PowerAppsOneGrid">
+              <parameters>
+                <data-set name="Items">
+                  <ViewId>00000000-0000-0000-0000-000000000000</ViewId>
+                </data-set>
+                <AccessibleLabel type="SingleLine.Text" />
+                <EnableEditing static="true" type="Enum">no</EnableEditing>
+                <DisableChildItemsEditing static="true" type="Enum">no</DisableChildItemsEditing>
+                <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+                <EnableSorting static="true" type="Enum">yes</EnableSorting>
+                <EnableGrouping static="true" type="Enum">no</EnableGrouping>
+                <EnableAggregation static="true" type="Enum">no</EnableAggregation>
+                <EnableColumnMoving static="true" type="Enum">no</EnableColumnMoving>
+                <EnableMultipleSelection static="true" type="Enum">yes</EnableMultipleSelection>
+                <EnableRangeSelection static="true" type="Enum">yes</EnableRangeSelection>
+                <EnableJumpBar static="true" type="Enum">no</EnableJumpBar>
+                <EnablePagination static="true" type="Enum">no</EnablePagination>
+                <EnableDropdownColor static="true" type="Enum">yes</EnableDropdownColor>
+                <EnableStatusIcons static="true" type="Enum">yes</EnableStatusIcons>
+                <EnableTypeIcons static="true" type="Enum">yes</EnableTypeIcons>
+                <NavigationTypesAllowed static="true" type="Enum">all</NavigationTypesAllowed>
+                <ReflowBehavior static="true" type="Enum">Reflow</ReflowBehavior>
+                <ContextualLookupColumnFilters static="true" type="Enum">yes</ContextualLookupColumnFilters>
+                <LookupFilterBeginsWith static="true" type="Enum">no</LookupFilterBeginsWith>
+                <GridCustomizerControlFullName type="SingleLine.Text" />
+                <EnableStatusColumn static="true" type="Enum">yes</EnableStatusColumn>
+              </parameters>
+            </customControl>
+            <customControl formFactor="2" name="Microsoft.PowerApps.PowerAppsOneGrid">
+              <parameters>
+                <data-set name="Items">
+                  <ViewId>00000000-0000-0000-0000-000000000000</ViewId>
+                </data-set>
+                <AccessibleLabel type="SingleLine.Text" />
+                <EnableEditing static="true" type="Enum">no</EnableEditing>
+                <DisableChildItemsEditing static="true" type="Enum">no</DisableChildItemsEditing>
+                <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+                <EnableSorting static="true" type="Enum">yes</EnableSorting>
+                <EnableGrouping static="true" type="Enum">no</EnableGrouping>
+                <EnableAggregation static="true" type="Enum">no</EnableAggregation>
+                <EnableColumnMoving static="true" type="Enum">no</EnableColumnMoving>
+                <EnableMultipleSelection static="true" type="Enum">yes</EnableMultipleSelection>
+                <EnableRangeSelection static="true" type="Enum">yes</EnableRangeSelection>
+                <EnableJumpBar static="true" type="Enum">no</EnableJumpBar>
+                <EnablePagination static="true" type="Enum">no</EnablePagination>
+                <EnableDropdownColor static="true" type="Enum">yes</EnableDropdownColor>
+                <EnableStatusIcons static="true" type="Enum">yes</EnableStatusIcons>
+                <EnableTypeIcons static="true" type="Enum">yes</EnableTypeIcons>
+                <NavigationTypesAllowed static="true" type="Enum">all</NavigationTypesAllowed>
+                <ReflowBehavior static="true" type="Enum">Reflow</ReflowBehavior>
+                <ContextualLookupColumnFilters static="true" type="Enum">yes</ContextualLookupColumnFilters>
+                <LookupFilterBeginsWith static="true" type="Enum">no</LookupFilterBeginsWith>
+                <GridCustomizerControlFullName type="SingleLine.Text" />
+                <EnableStatusColumn static="true" type="Enum">yes</EnableStatusColumn>
+              </parameters>
+            </customControl>
+          </controlDescription>
+        </controlDescriptions>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="la_learningplantemplate">
+          <attribute name="la_learningplantemplateid" />
+          <attribute name="la_name" />
+          <attribute name="createdon" />
+          <order attribute="la_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="la_level" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Learning Plan Templates" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

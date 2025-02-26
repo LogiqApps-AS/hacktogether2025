@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{e42e3b74-2a8f-4c0b-8e66-8aefdb973003}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{e2d5bffd-afc3-410d-937a-c2801d74f607}" IsUserDefined="1" name="tab-general">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="25%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{2876cdfa-02f4-4af6-843a-4ae0da7715f0}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b50b9f6a-d991-4cda-94d0-df1ec7c51558}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="la_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="la_name" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="_section_910" id="21784c3d-718a-4f5a-be73-ad7e73da0f2c" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Skills" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{39ee3869-cdc9-4879-b8e5-8ce41adfff55}" rowspan="4" colspan="1" auto="true" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1740341369382" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{c7f8b156-49fc-424a-bb7b-ad989f0608cb}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>la_skills_SkillAreaId_la_skillarea</RelationshipName>
+                            <TargetEntityType>la_skills</TargetEntityType>
+                            <ViewId>{3B44BB67-25F2-EF11-BE1F-7C1E528769D7}</ViewId>
+                            <ViewIds>{0A4C9E9A-2DD3-457A-B419-8B92CA3D5FCF},{3B44BB67-25F2-EF11-BE1F-7C1E528769D7}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{7c7e00d6-63bc-4217-a43f-8334e643bcd6}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{13de8486-7cba-477f-a6d9-de86ee416354}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f2986e2b-653f-4187-92d5-567c5bab1938}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3633c0d0-e7e8-4229-803d-6b39a3fa2584}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d149227d-f79d-4c65-886d-357b36503a57}" colspan="1" rowspan="1">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{71e8d50e-a28c-45c3-a91c-dbe47acd295f}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{3c0005f3-7013-4fe8-b904-f78d9740c41d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ebeb7986-6c0f-4750-93ff-0326896c3654}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5a95b063-476a-415e-949d-2b97f1eae1b4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{c7f8b156-49fc-424a-bb7b-ad989f0608cb}">
+          <customControl id="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+            <parameters>
+              <RecordsPerPage>4</RecordsPerPage>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <EnableChartPicker>true</EnableChartPicker>
+              <ChartGridMode>All</ChartGridMode>
+              <RelationshipName>la_skills_SkillAreaId_la_skillarea</RelationshipName>
+              <TargetEntityType>la_skills</TargetEntityType>
+              <ViewId>{3B44BB67-25F2-EF11-BE1F-7C1E528769D7}</ViewId>
+              <ViewIds>{0A4C9E9A-2DD3-457A-B419-8B92CA3D5FCF}</ViewIds>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="Microsoft.PowerApps.PowerAppsOneGrid">
+            <parameters>
+              <data-set name="Items">
+                <ViewId>{3B44BB67-25F2-EF11-BE1F-7C1E528769D7}</ViewId>
+                <TargetEntityType>la_skills</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName>la_skills_SkillAreaId_la_skillarea</RelationshipName>
+                <FilteredViewIds>{0A4C9E9A-2DD3-457A-B419-8B92CA3D5FCF}</FilteredViewIds>
+              </data-set>
+              <EnableEditing type="Enum" static="true">no</EnableEditing>
+              <DisableChildItemsEditing type="Enum" static="true">no</DisableChildItemsEditing>
+              <EnableFiltering type="Enum" static="true">yes</EnableFiltering>
+              <EnableSorting type="Enum" static="true">yes</EnableSorting>
+              <EnableGrouping type="Enum" static="true">no</EnableGrouping>
+              <EnableAggregation type="Enum" static="true">no</EnableAggregation>
+              <EnableColumnMoving type="Enum" static="true">no</EnableColumnMoving>
+              <EnableMultipleSelection type="Enum" static="true">yes</EnableMultipleSelection>
+              <EnableRangeSelection type="Enum" static="true">yes</EnableRangeSelection>
+              <EnableJumpBar type="Enum" static="true">no</EnableJumpBar>
+              <EnablePagination type="Enum" static="true">no</EnablePagination>
+              <EnableDropdownColor type="Enum" static="true">yes</EnableDropdownColor>
+              <EnableStatusIcons type="Enum" static="true">yes</EnableStatusIcons>
+              <EnableTypeIcons type="Enum" static="true">yes</EnableTypeIcons>
+              <NavigationTypesAllowed type="Enum" static="true">all</NavigationTypesAllowed>
+              <ReflowBehavior type="Enum" static="true">Reflow</ReflowBehavior>
+              <ShowAvatar type="Enum" static="true">yes</ShowAvatar>
+              <ShowFooter type="Enum" static="true">yes</ShowFooter>
+              <ShowColumnHeaders type="Enum" static="true">yes</ShowColumnHeaders>
+              <ContextualLookupColumnFilters type="Enum" static="true">yes</ContextualLookupColumnFilters>
+              <LookupFilterBeginsWith type="Enum" static="true">no</LookupFilterBeginsWith>
+              <DateTimeFormat type="Enum" static="true">none</DateTimeFormat>
+              <DateOnlyFormat type="Enum" static="true">none</DateOnlyFormat>
+              <EnableStatusColumn type="Enum" static="true">yes</EnableStatusColumn>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="Microsoft.PowerApps.PowerAppsOneGrid">
+            <parameters>
+              <data-set name="Items">
+                <ViewId>{3B44BB67-25F2-EF11-BE1F-7C1E528769D7}</ViewId>
+                <TargetEntityType>la_skills</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName>la_skills_SkillAreaId_la_skillarea</RelationshipName>
+                <FilteredViewIds>{0A4C9E9A-2DD3-457A-B419-8B92CA3D5FCF}</FilteredViewIds>
+              </data-set>
+              <EnableEditing type="Enum" static="true">no</EnableEditing>
+              <DisableChildItemsEditing type="Enum" static="true">no</DisableChildItemsEditing>
+              <EnableFiltering type="Enum" static="true">yes</EnableFiltering>
+              <EnableSorting type="Enum" static="true">yes</EnableSorting>
+              <EnableGrouping type="Enum" static="true">no</EnableGrouping>
+              <EnableAggregation type="Enum" static="true">no</EnableAggregation>
+              <EnableColumnMoving type="Enum" static="true">no</EnableColumnMoving>
+              <EnableMultipleSelection type="Enum" static="true">yes</EnableMultipleSelection>
+              <EnableRangeSelection type="Enum" static="true">yes</EnableRangeSelection>
+              <EnableJumpBar type="Enum" static="true">no</EnableJumpBar>
+              <EnablePagination type="Enum" static="true">no</EnablePagination>
+              <EnableDropdownColor type="Enum" static="true">yes</EnableDropdownColor>
+              <EnableStatusIcons type="Enum" static="true">yes</EnableStatusIcons>
+              <EnableTypeIcons type="Enum" static="true">yes</EnableTypeIcons>
+              <NavigationTypesAllowed type="Enum" static="true">all</NavigationTypesAllowed>
+              <ReflowBehavior type="Enum" static="true">Reflow</ReflowBehavior>
+              <ShowAvatar type="Enum" static="true">yes</ShowAvatar>
+              <ShowFooter type="Enum" static="true">yes</ShowFooter>
+              <ShowColumnHeaders type="Enum" static="true">yes</ShowColumnHeaders>
+              <ContextualLookupColumnFilters type="Enum" static="true">yes</ContextualLookupColumnFilters>
+              <LookupFilterBeginsWith type="Enum" static="true">no</LookupFilterBeginsWith>
+              <DateTimeFormat type="Enum" static="true">none</DateTimeFormat>
+              <DateOnlyFormat type="Enum" static="true">none</DateOnlyFormat>
+              <EnableStatusColumn type="Enum" static="true">yes</EnableStatusColumn>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="Microsoft.PowerApps.PowerAppsOneGrid">
+            <parameters>
+              <data-set name="Items">
+                <ViewId>{3B44BB67-25F2-EF11-BE1F-7C1E528769D7}</ViewId>
+                <TargetEntityType>la_skills</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName>la_skills_SkillAreaId_la_skillarea</RelationshipName>
+                <FilteredViewIds>{0A4C9E9A-2DD3-457A-B419-8B92CA3D5FCF}</FilteredViewIds>
+              </data-set>
+              <EnableEditing type="Enum" static="true">no</EnableEditing>
+              <DisableChildItemsEditing type="Enum" static="true">no</DisableChildItemsEditing>
+              <EnableFiltering type="Enum" static="true">yes</EnableFiltering>
+              <EnableSorting type="Enum" static="true">yes</EnableSorting>
+              <EnableGrouping type="Enum" static="true">no</EnableGrouping>
+              <EnableAggregation type="Enum" static="true">no</EnableAggregation>
+              <EnableColumnMoving type="Enum" static="true">no</EnableColumnMoving>
+              <EnableMultipleSelection type="Enum" static="true">yes</EnableMultipleSelection>
+              <EnableRangeSelection type="Enum" static="true">yes</EnableRangeSelection>
+              <EnableJumpBar type="Enum" static="true">no</EnableJumpBar>
+              <EnablePagination type="Enum" static="true">no</EnablePagination>
+              <EnableDropdownColor type="Enum" static="true">yes</EnableDropdownColor>
+              <EnableStatusIcons type="Enum" static="true">yes</EnableStatusIcons>
+              <EnableTypeIcons type="Enum" static="true">yes</EnableTypeIcons>
+              <NavigationTypesAllowed type="Enum" static="true">all</NavigationTypesAllowed>
+              <ReflowBehavior type="Enum" static="true">Reflow</ReflowBehavior>
+              <ShowAvatar type="Enum" static="true">yes</ShowAvatar>
+              <ShowFooter type="Enum" static="true">yes</ShowFooter>
+              <ShowColumnHeaders type="Enum" static="true">yes</ShowColumnHeaders>
+              <ContextualLookupColumnFilters type="Enum" static="true">yes</ContextualLookupColumnFilters>
+              <LookupFilterBeginsWith type="Enum" static="true">no</LookupFilterBeginsWith>
+              <DateTimeFormat type="Enum" static="true">none</DateTimeFormat>
+              <DateOnlyFormat type="Enum" static="true">none</DateOnlyFormat>
+              <EnableStatusColumn type="Enum" static="true">yes</EnableStatusColumn>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

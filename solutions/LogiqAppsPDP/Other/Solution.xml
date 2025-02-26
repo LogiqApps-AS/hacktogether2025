@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.25014.216" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25014.216" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.25014.00216">
+  <SolutionManifest>
+    <UniqueName>LogiqAppsPDP</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="LogiqApps.PDP" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>LogiqApps</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="LogiqApps" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="LogiqApps" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>la</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>21344</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="la_gamificationprofile" behavior="0" />
+      <RootComponent type="1" schemaName="la_learningplan" behavior="0" />
+      <RootComponent type="1" schemaName="la_learningplanitem" behavior="0" />
+      <RootComponent type="1" schemaName="la_learningplanitemtemplate" behavior="0" />
+      <RootComponent type="1" schemaName="la_learningplantemplate" behavior="0" />
+      <RootComponent type="1" schemaName="la_mentor" behavior="0" />
+      <RootComponent type="1" schemaName="la_personalitytest" behavior="0" />
+      <RootComponent type="1" schemaName="la_personalitytestresult" behavior="0" />
+      <RootComponent type="1" schemaName="la_skillarea" behavior="0" />
+      <RootComponent type="1" schemaName="la_skills" behavior="0" />
+      <RootComponent type="1" schemaName="la_useractivity" behavior="0" />
+      <RootComponent type="1" schemaName="la_useractivitytemplate" behavior="0" />
+      <RootComponent type="1" schemaName="la_userprofile" behavior="0" />
+      <RootComponent type="1" schemaName="systemuser" behavior="2" />
+      <RootComponent type="300" schemaName="la_skillshierarchy_05e0c" behavior="0" />
+      <RootComponent type="61" schemaName="cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" behavior="0" />
+      <RootComponent type="61" schemaName="la_LearningPlan" behavior="0" />
+      <RootComponent type="61" schemaName="la_LearningPlan2" behavior="0" />
+      <RootComponent type="61" schemaName="la_Mentors" behavior="0" />
+      <RootComponent type="61" schemaName="la_Skills" behavior="0" />
+      <RootComponent type="62" schemaName="la_AdminPDP" behavior="0" />
+      <RootComponent type="80" schemaName="la_AdminPDP" behavior="0" />
+      <RootComponent type="9" schemaName="la_level" behavior="0" />
+      <RootComponent type="9" schemaName="la_skillgrade" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="2" schemaName="siteid" displayName="Site" parentSchemaName="systemuser" parentDisplayName="User" solution="msdynce_Service (9.0.5.56)">
+          <package appName="msdynce_Service" version="9.0.24124.1010">msdynce_ServiceAnchor (9.0.24124.1010)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="User" id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="territoryid" displayName="Territory" parentSchemaName="systemuser" parentDisplayName="User" solution="msdynce_AppCommon (9.0.4.0066)">
+          <package appName="msdynce_AppCommon" version="9.0.25014.10001">msdynce_AppCommonAnchor (9.0.25014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="User" id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" displayName="cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" solution="msdyn_acceleratedsalessettings (9.1.25014.10001)">
+          <package appName="msdyn_AcceleratedSales" version="9.1.25014.10001">msdyn_AcceleratedSalesAnchor (9.1.25014.10001)</package>
+        </Required>
+        <Dependent type="1" schemaName="la_useractivity" displayName="User Activity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" displayName="cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" solution="msdyn_acceleratedsalessettings (9.1.25014.10001)">
+          <package appName="msdyn_AcceleratedSales" version="9.1.25014.10001">msdyn_AcceleratedSalesAnchor (9.1.25014.10001)</package>
+        </Required>
+        <Dependent type="61" schemaName="cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" displayName="cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0011)">
+          <package appName="ActivityFeedsCore" version="9.0.0.0011">ActivityFeedsCore (9.0.0.0011)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="User" id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="la_AdminPDP" displayName="Admin PDP" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0011)">
+          <package appName="ActivityFeedsCore" version="9.0.0.0011">ActivityFeedsCore (9.0.0.0011)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="User" id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="carfup_Carfup.HierarchyControl" displayName="carfup_Carfup.HierarchyControl" solution="Carfup_PCFHierarchyControl (1.0.0.1)" />
+        <Dependent type="300" schemaName="la_skillshierarchy_05e0c" displayName="Skills Hierarchy" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="kk_PCF.OptionSetButtons" displayName="kk_PCF.OptionSetButtons" solution="MultilingualComponents (1.1)" />
+        <Dependent type="60" displayName="Add New" parentDisplayName="Skill" id="{2055b67c-22f2-ef11-be1f-7c1e528769d7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="la_LA.PersonalityTest" displayName="la_LA.PersonalityTest" solution="package (1.1)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Personality Test Result" id="{7664b421-3323-4105-b471-66b7f38f7710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2501.4009)">
+          <package appName="Base Custom Controls" version="9.0.2501.4009">BaseCustomControlsCore (9.0.2501.4009)</package>
+        </Required>
+        <Dependent type="26" schemaName="Active Skills" displayName="Active Skills" parentSchemaName="la_skills" parentDisplayName="Skill" id="{0a4c9e9a-2dd3-457a-b419-8b92ca3d5fcf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2501.4009)">
+          <package appName="Base Custom Controls" version="9.0.2501.4009">BaseCustomControlsCore (9.0.2501.4009)</package>
+        </Required>
+        <Dependent type="26" schemaName="Related Skills" displayName="Related Skills" parentSchemaName="la_skills" parentDisplayName="Skill" id="{3b44bb67-25f2-ef11-be1f-7c1e528769d7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2501.4009)">
+          <package appName="Base Custom Controls" version="9.0.2501.4009">BaseCustomControlsCore (9.0.2501.4009)</package>
+        </Required>
+        <Dependent type="26" schemaName="Active Learning Plan Templates" displayName="Active Learning Plan Templates" parentSchemaName="la_learningplantemplate" parentDisplayName="Learning Plan Template" id="{bc7d382c-2a79-423a-a208-80227d4c65c7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="Microsoft.PowerApps.PowerAppsOneGrid" displayName="Microsoft.PowerApps.PowerAppsOneGrid" solution="BaseCustomControlsCore (9.0.2501.4009)">
+          <package appName="Base Custom Controls" version="9.0.2501.4009">BaseCustomControlsCore (9.0.2501.4009)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="Skill Area" id="{e42e3b74-2a8f-4c0b-8e66-8aefdb973003}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="yn_YN.ColoredDropdown" displayName="yn_YN.ColoredDropdown" solution="pp_MetadataDropdown (1.0.11)" />
+        <Dependent type="60" displayName="Add New" parentDisplayName="Skill" id="{2055b67c-22f2-ef11-be1f-7c1e528769d7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="yn_YN.ColoredDropdown" displayName="yn_YN.ColoredDropdown" solution="pp_MetadataDropdown (1.0.11)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Skill" id="{7c350eb6-a044-4303-b11e-abb951752624}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="yn_YN.ColoredDropdown" displayName="yn_YN.ColoredDropdown" solution="pp_MetadataDropdown (1.0.11)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Learning Plan Template" id="{bbfffdbf-0da9-461c-a8dc-013855f9aa55}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.12)" id.uniquename="AppChannel">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.16">PowerAppsAppFramework_Anchor (1.0.0.16)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=la_AdminPDP,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="la_AdminPDP" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
