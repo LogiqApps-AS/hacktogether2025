@@ -105,14 +105,13 @@ jobs:
         draft: true
         prerelease: false
 
-    - name: Upload Release Asset
-      id: release-managed-solution
-      uses: actions/upload-release-asset@v1
-      if: steps.create_release.conclusion == 'success'
+    - name: Upload Release Assets
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./release-assets/LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Unmanaged.zip
-        asset_name: LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Unmanaged.zip
-        asset_content_type: application/zip    
+        GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+      run: |
+          $assets = Get-ChildItem -Path ./release-assets -Filter *.zip
+          foreach ($asset in $assets) {
+            Write-Output "Uploading $asset"
+            gh release upload ${{ github.ref }} $asset.FullName
+          }
+      shell: pwsh
