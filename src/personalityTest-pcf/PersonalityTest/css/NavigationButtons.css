@@ -1,0 +1,48 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px; /* Increased margin above navigation */
+}
+
+.nav-button {
+  padding: 14px 35px;
+  border: none;
+  border-radius: 8px;
+  background-color: #709775; /* Green button color - from image */
+  color: #ffffff; /* White button text */
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: 'background-color: 0.3s ease';
+}
+
+.nav-button:hover {
+  background-color: #5e8063; /* Darker green on hover */
+}
+
+.nav-button:disabled {
+  background-color: #e0e0e0; /* Light grey disabled button */
+  color: #b0b0b0; /* Lighter text for disabled button */
+  cursor: not-allowed;
+}
+
+.prev-button {
+  background-color: #dcd7d1; /* Light beige for previous button - from image */
+  color: #584d41; /* Brown text for previous button */
+}
+
+.prev-button:hover {
+  background-color: #c2bcb6; /* Darker beige on hover */
+}
+
+.submit-button {
+  background-color: #668a6b; /* Slightly darker green for submit - variation from image */
+}
+
+.submit-button:hover {
+  background-color: #557359; /* Even darker green on submit hover */
+}
+
+.random-button {
+  background-color: #b0b0b0;
+    color: #ffffff;
+}

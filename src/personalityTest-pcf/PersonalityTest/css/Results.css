@@ -1,0 +1,138 @@
+.results-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.results-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.results-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.results-container li {
+  margin-bottom: 10px;
+}
+
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.chart-item {
+  width: 48%;
+  margin-bottom: 15px;
+}
+
+.chart-bar {
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.chart-label {
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    color: white;
+    font-size: 12px;
+}
+
+.chart-percentage {
+    text-align: right;
+}
+
+.chart-bar.openness {
+  background-color: #66c2a5;
+}
+
+.chart-bar.conscientiousness {
+  background-color: #fc8d62;
+}
+
+.chart-bar.extraversion {
+  background-color: #8da0cb;
+}
+
+.chart-bar.agreeableness {
+  background-color: #e78ac3;
+}
+
+.chart-bar.neuroticism {
+  background-color: #a6d854;
+}
+
+.results-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.results-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.save-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #367c39;
+}
+
+.retake-button {
+  background-color: #008CBA;
+  color: white;
+}
+
+.retake-button:hover {
+  background-color: #005f80;
+}
+
+.explain-button {
+  display: block; /* Make it a block-level element */
+  margin: 20px auto; /* Center horizontally */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  background-color: #7d7369; /* Greyish brown */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.explain-button:hover {
+  background-color: #584d41; /* Darker brown on hover */
+}
+
+.explanations-container {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #e8e4de; /* Light border */
+  border-radius: 8px;
+}
+
+.explanation-item {
+  margin-bottom: 15px;
+}
+
+.explanation-item h4 {
+  color: #3c3732; /* Dark brown heading */
+  margin-bottom: 5px;
+}
