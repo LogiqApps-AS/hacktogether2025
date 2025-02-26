@@ -7,7 +7,7 @@ on:
     branches: [main]
     paths-ignore:
       - "**/README.md"
-      - .github/**
+      # - .github/**
   pull_request:
     branches: [main]
 
@@ -167,7 +167,7 @@ jobs:
           asset_name: LogiqAppsEP_${{ steps.set_version.outputs.version }}_${{ steps.solution-version.outputs.info }}_Managed.zip
           asset_content_type: application/zip
 
-      - name: Upload LogiqAppsEP Unanaged Release Asset
+      - name: Upload LogiqAppsEP Unmanaged Release Asset
         id: release-managed-solution4
         uses: actions/upload-release-asset@v1
         if: steps.create_release.conclusion == 'success'
