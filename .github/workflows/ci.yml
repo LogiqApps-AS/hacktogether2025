@@ -159,7 +159,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ${{runner.temp}}/build/LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Managed.zip
-          asset_name: LogiqAppsPDP_${{ steps.set_version.outputs.version }}_${{ steps.solution-version.outputs.info }}_Managed.zip
+          asset_name: LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Managed.zip
           asset_content_type: application/zip
 
       - name: Upload LogiqAppsPDP Unmanaged Release Asset
@@ -171,7 +171,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ${{runner.temp}}/build/LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Unmanaged.zip
-          asset_name: LogiqAppsPDP_${{ steps.set_version.outputs.version }}_${{ steps.solution-version.outputs.info }}_Unmanaged.zip
+          asset_name: LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Unmanaged.zip
           asset_content_type: application/zip
 
       - name: Upload LogiqAppsEP Managed Release Asset
@@ -183,7 +183,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ${{runner.temp}}/build/LogiqAppsEP_${{ steps.set_version.outputs.version }}_Managed.zip
-          asset_name: LogiqAppsEP_${{ steps.set_version.outputs.version }}_${{ steps.solution-version.outputs.info }}_Managed.zip
+          asset_name: LogiqAppsEP_${{ steps.set_version.outputs.version }}_Managed.zip
           asset_content_type: application/zip
 
       - name: Upload LogiqAppsEP Unmanaged Release Asset
@@ -195,10 +195,10 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ${{runner.temp}}/build/LogiqAppsEP_${{ steps.set_version.outputs.version }}_Unmanaged.zip
-          asset_name: LogiqAppsEP_${{ steps.set_version.outputs.version }}_${{ steps.solution-version.outputs.info }}_Unmanaged.zip
+          asset_name: LogiqAppsEP_${{ steps.set_version.outputs.version }}_Unmanaged.zip
           asset_content_type: application/zip
 
-      - name: Upload PCF Asset ${{ steps.solution-unique-name.outputs.info }}_${{ steps.solution-version.outputs.info }}_managed.zip (Managed)
+      - name: Upload PCF Asset ${{ steps.solution-unique-name.outputs.info }}_managed.zip (Managed)
         id: release-managed-solution5
         uses: actions/upload-release-asset@v1
         if: steps.create_release.conclusion == 'success'
