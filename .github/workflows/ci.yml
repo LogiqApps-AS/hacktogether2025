@@ -79,6 +79,37 @@ jobs:
           }
         shell: pwsh
 
+      - name: Update Solution Version for PCF package
+        run: |
+          $version = "${{ steps.set_version.outputs.version }}"
+          $xmlFiles = Get-ChildItem -Path ./pcf/package -Recurse -Filter Solution.xml
+          foreach ($xmlFile in $xmlFiles) {
+            [xml]$xml = Get-Content $xmlFile.FullName
+            $xml.ImportExportXml.SolutionManifest.Version = $version
+            $xml.Save($xmlFile.FullName)
+          }
+        shell: pwsh
+
+      - name: Update PCF Control Version
+        run: |
+          $xmlFiles = Get-ChildItem -Path ./pcf/ -Recurse -Filter ControlManifest.Input.xml
+          foreach ($xmlFile in $xmlFiles) {
+              [xml]$xml = Get-Content $xmlFile.FullName
+              $version = $xml.manifest.control.version
+              if ($version -match '(\d+)\.(\d+)\.(\d+)') {
+                  $major = [int]$matches[1]
+                  $minor = [int]$matches[2]
+                  $patch = [int]$matches[3] + 1
+                  $newVersion = "$major.$minor.$patch"
+                  $xml.manifest.control.version = $newVersion
+                  $xml.Save($xmlFile.FullName)
+                  Write-Output "Updated version to $newVersion"
+              } else {
+                  Write-Error "Version format not recognized in $($xmlFile.FullName)"
+              }
+          }
+        shell: pwsh
+
       - name: Pack LogiqAppsEP Solution as Managed
         uses: microsoft/powerplatform-actions/pack-solution@v1
         with:
@@ -128,7 +159,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ steps.set_version.outputs.version }}
-          draft: true
+          draft: false
           prerelease: false
 
       - name: Upload LogiqAppsPDP Managed Release Asset
