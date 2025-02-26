@@ -92,12 +92,13 @@ jobs:
           $xmlFiles = Get-ChildItem -Path ./pcf/ -Recurse -Filter ControlManifest.Input.xml
           foreach ($xmlFile in $xmlFiles) {
               [xml]$xml = Get-Content $xmlFile.FullName
+              $buildNumber = $env:GITHUB_RUN_NUMBER
               $version = $xml.manifest.control.version
               if ($version -match '(\d+)\.(\d+)\.(\d+)') {
                   $major = [int]$matches[1]
                   $minor = [int]$matches[2]
                   $patch = [int]$matches[3] + 1
-                  $newVersion = "$major.$minor.$patch"
+                  $newVersion = "$major.$minor.$patch.$buildNumber"
                   $xml.manifest.control.version = $newVersion
                   $xml.Save($xmlFile.FullName)
                   Write-Output "Updated version to $newVersion"
