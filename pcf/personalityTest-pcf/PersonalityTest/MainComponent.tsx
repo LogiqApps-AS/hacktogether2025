@@ -10,7 +10,7 @@ import { StatusType } from './types/types';
 
 export interface IMainComponentProps {
   questionsPerPage: number;
-  results: Record<string, number>;
+  results: ITestResult[];
   onChange: (results: ITestResult[]) => void;
    onStatusChange: (status: StatusType) => void;
 }

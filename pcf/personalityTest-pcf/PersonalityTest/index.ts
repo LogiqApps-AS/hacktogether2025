@@ -48,10 +48,9 @@ export class PersonalityTest implements ComponentFramework.ReactControl<IInputs,
      */
     public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
         const props: IMainComponentProps = {
-            // name: 'Power Apps',
             questionsPerPage: 10,
             results: (context.parameters.result.raw && this.isJSONString(context.parameters.result.raw)) ?
-                JSON.parse(context.parameters.result.raw) : [],
+                JSON.parse(context.parameters.result.raw) as ITestResult[] : [],
             onChange: (results: ITestResult[]) => {
                 // Add code to update the results
                 this.results = results;
