@@ -51,38 +51,68 @@ jobs:
       - name: Pack LogiqAppsEP Solution as Managed
         uses: microsoft/powerplatform-actions/pack-solution@v1
         with:
-          solution-file: '${{runner.temp}}/build/LogiqAppsEP_Managed.zip'
+          solution-file: '${{runner.temp}}/build/LogiqAppsEP_${{ steps.set_version.outputs.version }}_Managed.zip'
           solution-folder: 'solutions/LogiqAppsEP'
           solution-type: 'Managed'
-          overwrite-files: true
       
       - name: Pack LogiqAppsEP Solution as Unmanaged
         uses: microsoft/powerplatform-actions/pack-solution@v1
         with:
-          solution-file: '${{runner.temp}}/build/LogiqAppsEP_Unmanaged.zip'
+          solution-file: '${{runner.temp}}/build/LogiqAppsEP_${{ steps.set_version.outputs.version }}_Unmanaged.zip'
           solution-folder: 'solutions/LogiqAppsEP'
           solution-type: 'Unmanaged'
-          overwrite-files: true
 
       - name: Pack LogiqAppsPDP Solution as Managed
         uses: microsoft/powerplatform-actions/pack-solution@v1
         with:
-          solution-file: '${{runner.temp}}/build/LogiqAppsPDP_Managed.zip'
+          solution-file: '${{runner.temp}}/build/LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Managed.zip'
           solution-folder: 'solutions/LogiqAppsPDP'
           solution-type: 'Managed'
-          overwrite-files: true
         
       - name: Pack LogiqAppsPDP Solution as Unmanaged
         uses: microsoft/powerplatform-actions/pack-solution@v1
         with:
-          solution-file: '${{runner.temp}}/build/LogiqAppsPDP_Unmanaged.zip'
+          solution-file: '${{runner.temp}}/build/LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Unmanaged.zip'
           solution-folder: 'solutions/LogiqAppsPDP'
           solution-type: 'Unmanaged'
-          overwrite-files: true
 
       - name: Publish Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: packaged-solutions
-          path: ./build/*.zip
+          path: '${{runner.temp}}/build/*.zip'
           overwrite: true
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Download Artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: packaged-solutions
+        path: ./release-assets
+
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: true
+        prerelease: false
+
+    - name: Upload Release Asset
+      id: release-managed-solution
+      uses: actions/upload-release-asset@v1
+      if: steps.create_release.conclusion == 'success'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./release-assets/LogiqAppsPDP_*_Unmanaged.zip
+        asset_name: LogiqAppsPDP_*_Unmanaged.zip
+        asset_content_type: application/zip    
