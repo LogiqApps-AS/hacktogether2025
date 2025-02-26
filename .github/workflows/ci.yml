@@ -101,7 +101,7 @@ jobs:
         GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
       with:
         tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
+        release_name: Release ${{ steps.set_version.outputs.version }}
         draft: true
         prerelease: false
 
@@ -113,6 +113,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./release-assets/LogiqAppsPDP_*_Unmanaged.zip
-        asset_name: LogiqAppsPDP_*_Unmanaged.zip
+        asset_path: ./release-assets/LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Unmanaged.zip
+        asset_name: LogiqAppsPDP_${{ steps.set_version.outputs.version }}_Unmanaged.zip
         asset_content_type: application/zip    
