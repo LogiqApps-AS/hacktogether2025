@@ -97,8 +97,8 @@ jobs:
               if ($version -match '(\d+)\.(\d+)\.(\d+)') {
                   $major = [int]$matches[1]
                   $minor = [int]$matches[2]
-                  $patch = [int]$matches[3] + 1
-                  $newVersion = "$major.$minor.$patch.$buildNumber"
+                  $patch = [int]$matches[3] + $buildNumber
+                  $newVersion = "$major.$minor.$patch"
                   $xml.manifest.control.version = $newVersion
                   $xml.Save($xmlFile.FullName)
                   Write-Output "Updated version to $newVersion"
