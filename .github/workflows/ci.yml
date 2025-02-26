@@ -13,9 +13,7 @@ on:
 env:
   GITHUB_TOKEN: ${{ secrets.TOKEN }}
   buildType: Release
-  projectfile: src/package
-  msbuildtarget: src/package/src
-  npm_project_dir: ./solutions/LogiqAppsPDP_PCF
+  projectfile: pcf/package
 
 jobs:
   build:
