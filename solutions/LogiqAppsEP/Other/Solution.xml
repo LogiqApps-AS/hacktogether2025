@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.25014.216" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25014.216" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.25014.00216">
+  <SolutionManifest>
+    <UniqueName>LogiqAppsEP</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="LogiqApps.EP" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>LogiqApps</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="LogiqApps" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="LogiqApps" languagecode="1033" />
+      </Descriptions>
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>la</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>21344</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="la_setting" behavior="0" />
+      <RootComponent type="1" schemaName="la_useractivity" behavior="0" />
+      <RootComponent type="1" schemaName="systemuser" behavior="0" />
+      <RootComponent type="300" schemaName="cr7a9_learninghome_261af" behavior="0" />
+      <RootComponent type="300" schemaName="la_homepage_64737" behavior="0" />
+      <RootComponent type="62" schemaName="la_EmployeePortal" behavior="0" />
+      <RootComponent type="80" schemaName="la_EmployeePortal" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_setting" displayName="Setting" solution="PowerPages_RuntimeCore (1.0.2407.1)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="80" schemaName="la_EmployeePortal" displayName="Employee Portal" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webformsession" displayName="Multistep Form Session" solution="PowerPages_RuntimeCore (1.0.2407.1)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="appusersetting" displayName="Model-Driven App User Setting" solution="AppModule (9.2.2501.2501071)">
+          <package appName="AppModule" version="9.2.2501.2501071">AppModuleSolutionAnchor (9.2.2501.2501071)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="bot" displayName="Chatbot" solution="PowerVirtualAgents (2025.1.1.16407410)">
+          <package appName="CCI Bots" version="2025.1.1.16407410">msdynce_CustomerCareIntelligenceBots_Anchor (2025.1.1.16407410)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="cat_sample" displayName="Sample" solution="CreatorKitCore (1.0.20241119.3)" />
+        <Dependent type="300" schemaName="cr7a9_learninghome_261af" displayName="Learning Home" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="componentversion" displayName="Component Version" solution="msdyn_ComponentVersioning (9.1.0.196)">
+          <package appName="Component Versioning Package" version="9.1.0.196">ComponentVersioning_Anchor (9.1.0.196)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mbs_pluginprofile" displayName="Plug-in Profile" solution="PluginProfiler (2.0.0.0)" />
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agentcapacityprofileunit" displayName="Agent Capacity Profile Unit" solution="msdyn_AgentAvailabilityStatus (1.5.25014.1011)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agentcapacityupdatehistory" displayName="Agent capacity update history" solution="OCBaseURBase (1.5.25014.1011)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agentchannelstate" displayName="Agent Channel State" solution="msdyn_AgentAvailabilityStatus (1.5.25014.1011)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agentgroupmembership" displayName="Agent Group Membership" solution="msdyn_AgentGroupManager (1.5.25014.1011)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agentlanguage" displayName="Agent Language" solution="msdyn_AgentGroupManager (1.5.25014.1011)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agentregion" displayName="Agent Region" solution="msdyn_AgentGroupManager (1.5.25014.1011)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agentstatus" displayName="Agent Status" solution="msdyn_AgentAvailabilityStatus (1.5.25014.1011)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_agentstatushistory" displayName="Agent Status history" solution="OmnichannelBase (1.10.0.84)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_assignmentmap" displayName="Assignment Map" solution="msdyn_SalesRouting (9.1.2501.4001)">
+          <package appName="msdyn_AcceleratedSales" version="9.1.25014.10001">msdyn_AcceleratedSalesAnchor (9.1.25014.10001)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_conversationmessageblock" displayName="Conversation Message Block" solution="OmnichannelBase (1.10.0.84)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_conversationparticipantinsights" displayName="Conversation Participant Insights" solution="msdyn_Conversation_Intelligence (9.0.1.1269)">
+          <package appName="Dynamics 365 Sales Conversation Intelligence" version="9.0.1.1269">msdyn_SalesConversationIntelligenceAnchor (9.0.1.1269)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_customeremailcommunication" displayName="Customer email communication" solution="SICommon (9.0.25014.10001)">
+          <package appName="msdynce_SalesInsights" version="9.0.25014.10006">msdynce_SalesInsightsAnchor (9.0.25014.10006)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_dataanalyticsworkspace" displayName="Data Analytics Workspace" solution="msdyn_DataInsightsAndAnalytics (9.0.25013.1003)">
+          <package appName="msdyn_AcceleratedSales" version="9.1.25014.10001">msdyn_AcceleratedSalesAnchor (9.1.25014.10001)</package>
+          <package appName="ServiceExtended" version="9.0.25013.1010">msdyn_ServiceExtendedAnchor (9.0.25013.1010)</package>
+          <package appName="CustomerServiceAnalytics" version="9.0.25013.1003">msdyn_CustomerServiceAnalyticsAnchor (9.0.25013.1003)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_duplicateleadmapping" displayName="Duplicate Lead Mapping" solution="msdyn_leadhygiene (9.1.2501.4001)">
+          <package appName="msdyn_AcceleratedSales" version="9.1.25014.10001">msdyn_AcceleratedSalesAnchor (9.1.25014.10001)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_forecast" displayName="Forecast" solution="msdyn_Forecasting (9.0.24124.10002)">
+          <package appName="msdyn_SalesIntegrationsAndAddOns" version="9.0.25014.10001">msdyn_SalesIntegrationsAddOns (9.0.25014.10001)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_liveconversation" displayName="Ongoing conversation (Deprecated)" solution="OmnichannelBase (1.10.0.84)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_liveworkstream" displayName="Work Stream" solution="OmnichannelBase (1.10.0.84)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_ocliveworkitem" displayName="Conversation" solution="OmnichannelBase (1.10.0.84)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_ocliveworkitemcharacteristic" displayName="Conversation Characteristic" solution="OmnichannelSBR (1.5.0.18)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_ocliveworkitemparticipant" displayName="Live Work Item Participant (Deprecated)" solution="OmnichannelBase (1.10.0.84)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_ocruleitem" displayName="Rule Item" solution="OmnichannelBase (1.10.0.84)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_ocsitrainingdata" displayName="Training record" solution="OCISBR (1.5.25014.1011)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_preferredagent" displayName="Preferred Agent" solution="UnifiedRouting (1.5.25014.1011)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_salesroutingrun" displayName="Sales routing run" solution="msdyn_SalesRouting (9.1.2501.4001)">
+          <package appName="msdyn_AcceleratedSales" version="9.1.25014.10001">msdyn_AcceleratedSalesAnchor (9.1.25014.10001)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_sessionparticipant" displayName="Session participant" solution="OmnichannelBase (1.10.0.84)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_shareasconfiguration" displayName="ShareAs Configuration" solution="msdyn_Forecasting (9.0.24124.10002)">
+          <package appName="msdyn_SalesIntegrationsAndAddOns" version="9.0.25014.10001">msdyn_SalesIntegrationsAddOns (9.0.25014.10001)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_suggestionprincipalobjectaccess" displayName="Suggestion Principal Object Access" solution="msdyn_SalesSuggestion (9.1.25014.10001)">
+          <package appName="msdyn_AcceleratedSales" version="9.1.25014.10001">msdyn_AcceleratedSalesAnchor (9.1.25014.10001)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_swarmparticipant" displayName="Swarm participant" solution="msdyn_Swarming (9.0.25013.1010)">
+          <package appName="ServiceExtended" version="9.0.25013.1010">msdyn_ServiceExtendedAnchor (9.0.25013.1010)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_systemuserschedulersetting" displayName="System User Scheduler Setting" solution="MicrosoftDynamicsScheduling (3.12.0.448)">
+          <package appName="msdynce_CoreServiceScheduling" version="9.0.24124.1004">msdynce_CoreServiceSchedulingAnchor (9.0.24124.1004)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_unifiedroutingrun" displayName="Routing diagnostic" solution="DecisionEngine (1.3.24125.2002)">
+          <package appName="ServiceExtended" version="9.0.25013.1010">msdyn_ServiceExtendedAnchor (9.0.25013.1010)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_wallsavedqueryusersettings" displayName="Filter" solution="ActivityFeedsCore (9.0.0.0011)">
+          <package appName="ActivityFeedsCore" version="9.0.0.0011">ActivityFeedsCore (9.0.0.0011)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_wkwcolleaguesforcompany" displayName="wkwcolleaguesforcompany" solution="msdyn_connectiongraph (9.3.25014.10001)">
+          <package appName="msdynce_SalesInsights" version="9.0.25014.10006">msdynce_SalesInsightsAnchor (9.0.25014.10006)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_wkwcolleaguesforcontact" displayName="wkwcolleaguesforcontact" solution="msdyn_connectiongraph (9.3.25014.10001)">
+          <package appName="msdynce_SalesInsights" version="9.0.25014.10006">msdynce_SalesInsightsAnchor (9.0.25014.10006)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msfp_survey" displayName="Customer Voice survey" solution="MicrosoftFormsPro (2.0.0.58)">
+          <package appName="Forms Pro" version="2.0.0.58">MicrosoftFormsPro (2.0.0.58)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_adplacement" displayName="Ad Placement" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_columnpermission" displayName="Column Permission" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_columnpermissionprofile" displayName="Column Permission Profile" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_contentsnippet" displayName="Content Snippet" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_entityform" displayName="Basic Form" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_entityformmetadata" displayName="Basic Form Metadata" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_entitylist" displayName="List" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_entitypermission" displayName="Table Permission" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_pagetemplate" displayName="Page Template" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_pollplacement" displayName="Poll Placement" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_publishingstate" displayName="Publishing State" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_publishingstatetransitionrule" displayName="Publishing State Transition Rule" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_redirect" displayName="Redirect" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_shortcut" displayName="Shortcut" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_sitemarker" displayName="Site Marker" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_sitesetting" displayName="Site Setting" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_webfile" displayName="Web File" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_webform" displayName="Multistep Form" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_webformmetadata" displayName="Multistep Form Metadata" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_webformstep" displayName="Form Step" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_weblink" displayName="Web Link" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_weblinkset" displayName="Web Link Set" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_webpage" displayName="Web Page" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_webpageaccesscontrolrule" displayName="Web Page Access Control Rule" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_webrole" displayName="Web Role" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_website" displayName="Website" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_websiteaccess" displayName="Website Access" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_websitelanguage" displayName="Website Language" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="mspp_webtemplate" displayName="Web Template" solution="PowerPages_Apps (1.0.2501.3)">
+          <package appName="Power Pages Core Package" version="1.0.2501.138">PowerPages_Core (1.0.2501.138)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="usermobileofflineprofilemembership" displayName="UserMobileOfflineProfileMembership" solution="MobileOfflineMembership (1.0.0.3)">
+          <package appName="MobileOfflineExtensionApp Package" version="1.0.0.0">MobileOfflineExtensionApp_Anchor (1.0.0.0)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="siteid" displayName="Site" parentSchemaName="systemuser" parentDisplayName="User" solution="msdynce_Service (9.0.5.56)">
+          <package appName="msdynce_Service" version="9.0.24124.1010">msdynce_ServiceAnchor (9.0.24124.1010)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="User" id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="territoryid" displayName="Territory" parentSchemaName="systemuser" parentDisplayName="User" solution="msdynce_AppCommon (9.0.4.0066)">
+          <package appName="msdynce_AppCommon" version="9.0.25014.10001">msdynce_AppCommonAnchor (9.0.25014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="User" id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" displayName="cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" solution="msdyn_acceleratedsalessettings (9.1.25014.10001)">
+          <package appName="msdyn_AcceleratedSales" version="9.1.25014.10001">msdyn_AcceleratedSalesAnchor (9.1.25014.10001)</package>
+        </Required>
+        <Dependent type="1" schemaName="la_useractivity" displayName="User Activity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" displayName="cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" solution="msdyn_acceleratedsalessettings (9.1.25014.10001)">
+          <package appName="msdyn_AcceleratedSales" version="9.1.25014.10001">msdyn_AcceleratedSalesAnchor (9.1.25014.10001)</package>
+        </Required>
+        <Dependent type="62" schemaName="la_EmployeePortal" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0011)">
+          <package appName="ActivityFeedsCore" version="9.0.0.0011">ActivityFeedsCore (9.0.0.0011)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="User" id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="la_EmployeePortal" displayName="Employee Portal" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0011)">
+          <package appName="ActivityFeedsCore" version="9.0.0.0011">ActivityFeedsCore (9.0.0.0011)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="User" id="{c0d7d7dd-afd0-4675-85fe-1cc5a48be6df}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_OmnichannelBase/_imgs/SitemapIcon/Presence" displayName="msdyn_OmnichannelBase/_imgs/SitemapIcon/Presence" solution="OmnichannelBase (1.10.0.84)">
+          <package appName="UnifiedRoutingPrime" version="1.5.26.172">UnifiedRoutingPrimeAnchor (1.5.26.172)</package>
+        </Required>
+        <Dependent type="62" schemaName="la_EmployeePortal" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="cat_PowerCAT.Breadcrumb" displayName="cat_PowerCAT.Breadcrumb" solution="CreatorKitCore (1.0.20241119.3)" />
+        <Dependent type="300" schemaName="cr7a9_learninghome_261af" displayName="Learning Home" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="cat_PowerCAT.Card" displayName="cat_PowerCAT.Card" solution="CreatorKitCore (1.0.20241119.3)" />
+        <Dependent type="300" schemaName="cr7a9_learninghome_261af" displayName="Learning Home" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="cat_PowerCAT.DonutChart" displayName="cat_PowerCAT.DonutChart" solution="CreatorKitCore (1.0.20241119.3)" />
+        <Dependent type="300" schemaName="cr7a9_learninghome_261af" displayName="Learning Home" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="cat_PowerCAT.DonutChart" displayName="cat_PowerCAT.DonutChart" solution="CreatorKitCore (1.0.20241119.3)" />
+        <Dependent type="300" schemaName="la_homepage_64737" displayName="Home Page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="cat_PowerCAT.FluentDetailsList" displayName="cat_PowerCAT.FluentDetailsList" solution="CreatorKitCore (1.0.20241119.3)" />
+        <Dependent type="300" schemaName="cr7a9_learninghome_261af" displayName="Learning Home" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="cat_PowerCAT.FluentDetailsList" displayName="cat_PowerCAT.FluentDetailsList" solution="CreatorKitCore (1.0.20241119.3)" />
+        <Dependent type="300" schemaName="la_homepage_64737" displayName="Home Page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="cat_PowerCAT.GaugeChart" displayName="cat_PowerCAT.GaugeChart" solution="CreatorKitCore (1.0.20241119.3)" />
+        <Dependent type="300" schemaName="cr7a9_learninghome_261af" displayName="Learning Home" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="cat_PowerCAT.HorizontalBarChart" displayName="cat_PowerCAT.HorizontalBarChart" solution="CreatorKitCore (1.0.20241119.3)" />
+        <Dependent type="300" schemaName="cr7a9_learninghome_261af" displayName="Learning Home" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="cat_PowerCAT.Persona" displayName="cat_PowerCAT.Persona" solution="CreatorKitCore (1.0.20241119.3)" />
+        <Dependent type="300" schemaName="cr7a9_learninghome_261af" displayName="Learning Home" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="cat_PowerCAT.Persona" displayName="cat_PowerCAT.Persona" solution="CreatorKitCore (1.0.20241119.3)" />
+        <Dependent type="300" schemaName="la_homepage_64737" displayName="Home Page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="cat_PowerCAT.StackedBarChart" displayName="cat_PowerCAT.StackedBarChart" solution="CreatorKitCore (1.0.20241119.3)" />
+        <Dependent type="300" schemaName="cr7a9_learninghome_261af" displayName="Learning Home" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="log_LQA.Avatar" displayName="log_LQA.Avatar" solution="Active" />
+        <Dependent type="60" displayName="Main form" parentDisplayName="Setting" id="{bbabad79-4ff1-ef11-be1f-6045bddf382b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.12)" id.uniquename="AppChannel">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.16">PowerAppsAppFramework_Anchor (1.0.0.16)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=la_EmployeePortal,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="la_EmployeePortal" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

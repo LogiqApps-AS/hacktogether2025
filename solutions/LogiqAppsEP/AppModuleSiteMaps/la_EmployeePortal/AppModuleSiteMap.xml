@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>la_EmployeePortal</SiteMapUniqueName>
+  <EnableCollapsibleGroups>False</EnableCollapsibleGroups>
+  <ShowHome>True</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="area_80d2c34a" ResourceId="SitemapDesigner.NewTitle" DescriptionResourceId="SitemapDesigner.NewTitle" ShowGroups="true" IntroducedVersion="7.0.0.0">
+      <Titles>
+        <Title LCID="1033" Title="Area1" />
+      </Titles>
+      <Group Id="group_8459a7ca" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
+        <Titles>
+          <Title LCID="1033" Title="Development" />
+        </Titles>
+        <SubArea Id="subarea_e19f76e1" Icon="/_imgs/imagestrips/transparent_spacer.gif" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" Page="cr7a9_learninghome_261af">
+          <Titles>
+            <Title LCID="1033" Title="Learning Home" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_e9106498" VectorIcon="/WebResources/cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" Icon="/WebResources/cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" Entity="la_useractivity" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="My Activities" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_6c3b34bf" VectorIcon="/WebResources/msdyn_OmnichannelBase/_imgs/SitemapIcon/Presence" Icon="/WebResources/msdyn_OmnichannelBase/_imgs/SitemapIcon/Presence" Entity="la_setting" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+          <Titles>
+            <Title LCID="1033" Title="Agent" />
+          </Titles>
+        </SubArea>
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Employee Portal" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

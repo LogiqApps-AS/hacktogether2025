@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{bbabad79-4ff1-ef11-be1f-6045bddf382b}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{6141e7e5-e9c0-4693-a07b-69ff37ca04ab}" IsUserDefined="1" labelid="{25c41c91-538b-41a1-b9ed-2b5364c97c6e}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{dd04ea2e-24c6-4a49-8ee2-ed5fe25a9e1e}" labelid="{913a372c-5b65-4a6a-b0fe-2b03280de898}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7d861a2c-519b-4d01-9204-b68eba88fb55}" locklevel="0" colspan="1" rowspan="1" visible="true" showlabel="false" labelid="{d03eae4b-9173-4db6-bda1-6a60e1735edc}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="la_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="la_name" disabled="false" uniqueid="{3ee82e56-37af-4ed2-80e7-8788f894aa35}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{25d93dce-c24f-459c-bec1-dc10db2f6656}" labelid="{533f0b9f-3f24-4779-a165-358c909ef330}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="la_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="la_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{94a98247-0ab9-48c9-a7f9-9eaa8bb34ba8}" labelid="{89f4171a-7852-49db-a250-5783d3520148}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="_section_437" id="464a06fd-9343-4873-b32b-5b1cf95aa9a1" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" visible="false">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{905368ce-3dcb-4ca5-9c60-94f2d28ffbe5}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{7537b3ba-c7c1-488e-aea2-38668a63da03}" showlabel="false" labelid="{4a4e3bc0-9d14-4db6-a906-5ae793add1bb}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5b2a8bb8-0ae3-4615-9f3c-97d73db558cc}" showlabel="false" labelid="{93a3f947-8b95-4f7e-a274-13e5af8da129}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ddf784e9-2e12-4bd8-886a-211c69bedb74}" showlabel="false" labelid="{b57afb5b-f386-4227-8646-c62d30a2dbbe}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{5b319719-f97c-457c-a36a-0853c638bd81}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{175190d6-6aac-453b-b30b-3b4e99a91ab0}" showlabel="false" labelid="{9805969d-6e03-4d95-830c-ed62df162c42}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f82074b5-323b-4191-a276-25108e27f03d}" showlabel="false" labelid="{9767ab82-a234-4b95-adb6-a2a54b08fbfd}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{080a61bd-f31f-44ed-9b4c-a5951fd29bfd}" showlabel="false" labelid="{f4ae43f8-f0f4-4ee9-a344-183f9648f59f}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{3ee82e56-37af-4ed2-80e7-8788f894aa35}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>la_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="log_LQA.Avatar">
+            <parameters>
+              <subscriptionKey type="SingleLine.Text">la_name</subscriptionKey>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="log_LQA.Avatar">
+            <parameters>
+              <subscriptionKey type="SingleLine.Text">la_name</subscriptionKey>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="log_LQA.Avatar">
+            <parameters>
+              <subscriptionKey type="SingleLine.Text">la_name</subscriptionKey>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Main form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

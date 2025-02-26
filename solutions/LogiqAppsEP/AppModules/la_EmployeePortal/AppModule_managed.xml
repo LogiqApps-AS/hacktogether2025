@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>la_EmployeePortal</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="adx_setting" />
+    <AppModuleComponent type="1" schemaName="la_setting" />
+    <AppModuleComponent type="1" schemaName="la_useractivity" />
+    <AppModuleComponent type="62" schemaName="la_EmployeePortal" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Employee Portal" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Empower your business with Employee Portal, enabling streamlined management of employee settings and configurations. Enhance operational efficiency by providing administrators with the tools to customize and optimize employee-related processes." languagecode="1033" />
+  </Descriptions>
+  <appelements>
+    <appelement uniquename="la_la_EmployeePortal_canvasappid_cr7a9_learninghome_261af">
+      <canvasappid>
+        <name>cr7a9_learninghome_261af</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>la_la_EmployeePortal_canvasappid_cr7a9_learninghome_261af</name>
+    </appelement>
+    <appelement uniquename="la_la_EmployeePortal_canvasappid_la_homepage_64737">
+      <canvasappid>
+        <name>la_homepage_64737</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>la_la_EmployeePortal_canvasappid_la_homepage_64737</name>
+    </appelement>
+  </appelements>
+  <appsettings>
+    <appsetting settingdefinitionid.uniquename="AppChannel">
+      <iscustomizable>1</iscustomizable>
+      <value>1</value>
+    </appsetting>
+  </appsettings>
+</AppModule>
