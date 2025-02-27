@@ -1,10 +1,9 @@
 import * as React from 'react';
-import { Question as QuestionType } from '../types/types';
-// import './Question.css';
+import { IQuestion as QuestionType } from '../../types/types';
 
 interface QuestionProps {
   question: QuestionType;
-  answer: number;
+  answer: string;
   onAnswer: (value: number) => void;
 }
 
@@ -21,7 +20,7 @@ const Question: React.FC<QuestionProps> = ({ question, answer, onAnswer }) => {
                 type="radio"
                 name={`question-${question.id}`}
                 value={value}
-                checked={answer === value}
+                checked={answer === value.toString()}
                 onChange={() => onAnswer(value)}
               />
             </label>

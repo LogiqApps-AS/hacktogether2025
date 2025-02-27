@@ -6,7 +6,7 @@ import Results from './components/Results';
 import { mockOpenAIResponse } from './utils/mockOpenAI';
 import { mockQuestions } from './utils/questions';
 import * as React from 'react';
-import { StatusType } from './types/types';
+import { QuestionType, StatusType } from './types/types';
 
 export interface IMainComponentProps {
   questionsPerPage: number;
@@ -18,7 +18,7 @@ export interface IMainComponentProps {
 export interface ITestResult {
   questionId: string
   questionText: string
-  answer: number,
+  answer: string,
   trait: string
 }
 
@@ -27,7 +27,7 @@ const MainComponent: React.FC<IMainComponentProps> = ({
   questionsPerPage = 10,
 }) => {
   const [currentPage, setCurrentPage] = useState<number>(0);
-  const [answers, setAnswers] = useState<number[]>(Array(mockQuestions.length).fill(0));
+  const [answers, setAnswers] = useState<string[]>(Array(mockQuestions.length).fill(0));
   const [isNextPageDisabled, setIsNextPageDisabled] = useState<boolean>(true);
   const [showResults, setShowResults] = useState<boolean>(false);
   const [results, setResults] = useState<Record<string, number>>({});
@@ -40,14 +40,14 @@ const MainComponent: React.FC<IMainComponentProps> = ({
 
   useEffect(() => {
     const currentPageAnswers = answers.slice(startIndex, startIndex + questionsPerPage);
-    const allAnswered = currentPageAnswers.every(answer => answer !== 0);
+    const allAnswered = currentPageAnswers.every(answer => answer !== '0');
     setIsNextPageDisabled(!allAnswered);
   }, [currentPage, answers, startIndex]);
 
-  const handleAnswer = (questionIndex: number, optionValue: number) => {
+  const handleAnswer = (questionIndex: number, optionValue: string| number) => {
     const absoluteQuestionIndex = startIndex + questionIndex;
     const newAnswers = [...answers];
-    newAnswers[absoluteQuestionIndex] = optionValue;
+    newAnswers[absoluteQuestionIndex] = optionValue.toString();
     setAnswers(newAnswers);
   };
 
@@ -71,6 +71,9 @@ const MainComponent: React.FC<IMainComponentProps> = ({
     const traitScores: Record<string, number> = {};
 
     mockQuestions.forEach((question, index) => {
+      if(question.type  !== QuestionType.Default) {
+        return;
+      }
       const answer = answers[index];
       const trait = question.trait;
 
@@ -78,7 +81,7 @@ const MainComponent: React.FC<IMainComponentProps> = ({
         traitScores[trait] = 0;
       }
 
-      const answerScore = answer - 3;
+      const answerScore = parseInt(answer.toLocaleString() ) - 3;
       traitScores[trait] += answerScore;
     });
 
@@ -116,20 +119,20 @@ const MainComponent: React.FC<IMainComponentProps> = ({
   const randomAnswer = () => {
     const newAnswers = [...answers];
     for (let i = startIndex; i < startIndex + questionsPerPage && i < mockQuestions.length; i++) {
-      newAnswers[i] = Math.floor(Math.random() * 5) + 1;
+      newAnswers[i] = (Math.floor(Math.random() * 5) + 1).toString();
     }
     setAnswers(newAnswers);
   };
 
   const resetTest = () => {
-    setAnswers(Array(mockQuestions.length).fill(0));
+    setAnswers(Array(mockQuestions.length).fill('0'));
     setShowResults(false);
     setCurrentPage(0);
     setSummary("");
   };
 
   return (
-    <div className="container">
+    <div className="containerMain">
       {/* <div style={{ width: '100%' }}> */}
       <Header showResults={showResults} />
       {!showResults || results ? (

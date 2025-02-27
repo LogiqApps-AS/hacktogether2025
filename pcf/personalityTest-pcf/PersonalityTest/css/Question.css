@@ -81,3 +81,39 @@
   color: #7d7369; /* Greyish brown color */
   margin: 0 10px; /* Add some horizontal margin */
 }
+
+
+/* Styles for multiple-choice questions */
+.mult-question-container {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.mult-question-container h3 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.mul-options-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mult-option { /* Renamed class */
+  display: flex;
+  align-items: left;
+  margin-bottom: 10px;
+}
+
+.mult-option input[type="checkbox"] { /* Renamed class */
+  margin-right: 10px;
+}
+
+.mult-option label { /* Renamed class */
+  font-size: 1.1em;
+  color: #555;
+}
