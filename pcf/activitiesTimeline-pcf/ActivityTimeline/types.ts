@@ -3,7 +3,7 @@ export interface LearningPlanItem {
   itemName: string;
   plannedDate: string;
   itemDescription: string;
-  completed?: boolean;
+  status: number;
 }
 
 export interface CompletionDialogProps {
