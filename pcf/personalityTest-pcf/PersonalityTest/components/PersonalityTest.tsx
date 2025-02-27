@@ -117,7 +117,7 @@ const PersonalityTest: React.FC = () => {
         const question = mockQuestions.find(q => q.id === a.questionId);
         return {
           questionId: a.questionId,
-          question: question?.textLeft || '',
+          question: question?.textLeft ?? '',
           answer: typeof a.value === 'number' ? a.value.toString() : a.value
         };
       });
