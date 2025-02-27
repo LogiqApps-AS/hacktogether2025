@@ -29,7 +29,7 @@ const DefaultQuestion: React.FC<DefaultQuestionProps> = ({ question, value, onCh
       />
       <div className="flex justify-between mt-1">
         <span className="text-xs text-gray-500">Strongly Agree</span>
-        <span className="text-xs text-gray-500">Strongly Agree</span>
+        <span className="text-xs text-gray-500">Strongly Disagree</span>
       </div>
     </div>
   );

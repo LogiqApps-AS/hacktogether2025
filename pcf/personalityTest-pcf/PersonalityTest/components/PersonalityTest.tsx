@@ -18,7 +18,7 @@ const PersonalityTest: React.FC = () => {
   const [testCompleted, setTestCompleted] = useState(false);
   const [results, setResults] = useState<ITestResults | null>(null);
 
-  const questionsPerPage = 10;
+  const questionsPerPage = 6;
   const totalPages = Math.ceil(mockQuestions.length / questionsPerPage);
   
   // Get current page questions
