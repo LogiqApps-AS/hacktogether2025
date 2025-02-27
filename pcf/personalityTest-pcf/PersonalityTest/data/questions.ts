@@ -1,4 +1,5 @@
-import { IQuestion, QuestionType } from '../types/types';
+import { QuestionType,IQuestion } from "../types/types";
+
 
 export const mockQuestions: IQuestion[] = [
   // Openness to Experience (10 questions)
@@ -83,5 +84,4 @@ export const mockQuestions: IQuestion[] = [
     ]
   },
   { id: 53, textLeft: 'If you could change one thing to improve your life right now, what would it be?', trait: 'Openness', type: QuestionType.OpenQuestion },
-
 ];

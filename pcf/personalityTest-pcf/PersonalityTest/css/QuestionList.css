@@ -1,7 +1,0 @@
-.questions-container {
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-  margin-bottom: 40px;
-  min-height: 500px; /* Set a fixed minimum height */
-}

@@ -1,19 +1,45 @@
-export enum QuestionType{
-  Default = 0,
-  OpenQuestion = 1,
-  Options = 2,
-  MultipleOptions = 3,
-} 
-export interface IQuestion {
-  id: number;
-  textLeft: string;
-  textRight?: string;
-  trait: string; // Add trait property
-  type: QuestionType;
-  options?: string[];
-}
+export enum QuestionType {
+    Default = 'default',
+    Options = 'options',
+    MultipleOptions = 'multipleOptions',
+    OpenQuestion = 'openQuestion'
+  }
+  
+  export interface IQuestion {
+    id: number;
+    textLeft: string;
+    textRight?: string;
+    trait: string;
+    type: QuestionType;
+    options?: string[];
+  }
+  
+  export interface IAnswer {
+    questionId: number;
+    value: number | string | string[];
+    trait: string;
+  }
+  
+  export interface ITraitResult {
+    trait: string;
+    score: number;
+    percentage: number;
+    description: string;
+  }
+  
+  export interface ITestResults {
+    traits: ITraitResult[];
+    openAnswers: {
+      questionId: number;
+      question: string;
+      answer: string | string[];
+    }[];
+  }
 
-export enum StatusType {
-  InProgress = 0,
-  Completed = 1,
-}
+  export enum StatusType {
+    Active=0,
+    Inactive=1,
+    
+  }
+
+  export default IQuestion;

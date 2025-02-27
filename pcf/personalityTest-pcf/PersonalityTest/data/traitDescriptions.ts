@@ -1,0 +1,11 @@
+export const traitDescriptions = {
+    Openness: "Openness reflects a person's willingness to embrace new experiences, ideas, and perspectives. High scorers tend to be creative, curious, and appreciative of art, adventure, and unusual ideas. They are more likely to have a broad range of interests and be more willing to try new things. Low scorers tend to be more conventional, traditional, and may prefer routine over novelty.",
+    
+    Conscientiousness: "Conscientiousness reflects a person's tendency to be organized, responsible, and hardworking. High scorers tend to be efficient, disciplined, and achievement-oriented. They prefer planned rather than spontaneous behavior and are often seen as reliable and thorough. Low scorers may be more flexible, spontaneous, and disorganized, but can also be more carefree and less constrained by rules and plans.",
+    
+    Extraversion: "Extraversion reflects a person's tendency to seek stimulation in the company of others and to express positive emotions. High scorers tend to be sociable, talkative, and energetic. They draw energy from social interactions and are often enthusiastic and action-oriented. Low scorers (introverts) tend to be more reserved, quiet, and may prefer solitary activities. They may not necessarily be shy but rather need less stimulation and more time alone to recharge.",
+    
+    Agreeableness: "Agreeableness reflects a person's tendency to be compassionate and cooperative rather than suspicious and antagonistic towards others. High scorers tend to be friendly, considerate, and willing to compromise their interests with others. They are generally optimistic about human nature and get along well with others. Low scorers tend to be more competitive, challenging, and sometimes skeptical of others' intentions.",
+    
+    Neuroticism: "Neuroticism reflects a person's tendency to experience negative emotions, such as anxiety, anger, or depression. High scorers tend to be emotionally reactive and vulnerable to stress. They may be more likely to interpret ordinary situations as threatening and minor frustrations as hopelessly difficult. Low scorers tend to be more emotionally stable and resilient, less easily upset, and less emotionally reactive."
+  };

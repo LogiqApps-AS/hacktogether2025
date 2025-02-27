@@ -56,11 +56,11 @@ export class PersonalityTest implements ComponentFramework.ReactControl<IInputs,
                 this.results = results;
                 this.notifyOutputChanged();
             },
-            onStatusChange: (status: StatusType) => {
-                // Add code to update the status
-                this.status = status;
-                this.notifyOutputChanged();
-            }
+            // onStatusChange: (status: StatusType) => {
+            //     // Add code to update the status
+            //     this.status = status;
+            //     this.notifyOutputChanged();
+            // }
 
         };
         // @typescript-eslint/no-unsafe-argument
@@ -76,7 +76,7 @@ export class PersonalityTest implements ComponentFramework.ReactControl<IInputs,
     public getOutputs(): IOutputs {
         return {
             result: JSON.stringify(this.results),
-            status: this.status
+            status: this.status ?? null
         };
     }
 
