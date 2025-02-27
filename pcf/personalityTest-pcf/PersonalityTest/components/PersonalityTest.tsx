@@ -111,14 +111,14 @@ const PersonalityTest: React.FC = () => {
     const openAnswers = answers
       .filter(a => {
         const question = mockQuestions.find(q => q.id === a.questionId);
-        return question?.type !== QuestionType.Default && (typeof a.value === 'string' || Array.isArray(a.value));
+        return question?.type !== QuestionType.Default;
       })
       .map(a => {
         const question = mockQuestions.find(q => q.id === a.questionId);
         return {
           questionId: a.questionId,
-          question: question?.textLeft ?? '',
-          answer: a.value as string | string[]
+          question: question?.textLeft || '',
+          answer: typeof a.value === 'number' ? a.value.toString() : a.value
         };
       });
 
