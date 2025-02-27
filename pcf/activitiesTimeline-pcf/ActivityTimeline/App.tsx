@@ -7,9 +7,10 @@ import { LearningPlanItem } from './types';
 
 interface AppProps {
   localItems: LearningPlanItem[];
+  updateRecord: (id: string, updatedFields: Partial<LearningPlanItem>) => void;
 }
 
-export function App({ localItems }: AppProps) {
+export function App({ localItems, updateRecord }: AppProps) {
   const [items, setItems] = useState<LearningPlanItem[]>(localItems);
   const [selectedItem, setSelectedItem] = useState<LearningPlanItem | null>(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -43,35 +44,38 @@ export function App({ localItems }: AppProps) {
     setSelectedItem(item);
     setIsDialogOpen(true);
   };
-
   const handleSubmitCompletion = (description: string) => {
     if (selectedItem) {
-      setItems(items.map(item => 
-        item.id === selectedItem.id 
-          ? { ...item, completed: true, itemDescription: description }
-          : item
-      ));
+        setItems(items.map(item => 
+            item.id === selectedItem.id 
+                ? { ...item, status: 3, itemDescription: description }
+                : item
+        ));
+
+        // Call the function to update the Dataverse record
+        updateRecord(selectedItem.id, { status: 3, itemDescription: description });
     }
   };
+
 
   const timelineItems = items.map(item => ({
     title: item.plannedDate.split("T")[0],
     cardTitle: item.itemName,
     cardSubtitle: item.itemDescription,
-    cardDetailedText: item.completed ? 'Completed' : 'Pending',
+    cardDetailedText: item.status == 1 || item.status == 2 ? 'Completed' : 'Pending',
   }));
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Learning Plan Timeline</h1>
+        <h1 className="text-3xl font-bold text-gray-900">Learning Plan Timeline</h1>
         
         <div className="bg-white rounded-xl shadow-sm p-6">
           <div style={{ width: '100%', height: '400px' }}>
             <Chrono
               items={timelineItems}
               mode="HORIZONTAL"
-              cardHeight={150}
+              cardHeight={90}
               slideShow
               slideItemDuration={2000}
               theme={{
@@ -91,7 +95,7 @@ export function App({ localItems }: AppProps) {
                 className="flex flex-col p-4 bg-gray-50 rounded-lg"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  {item.completed ? (
+                  {item.status == 1 || item.status == 2 ? (
                     <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
                   ) : (
                     <Clock className="h-5 w-5 text-blue-500 flex-shrink-0" />
@@ -106,7 +110,7 @@ export function App({ localItems }: AppProps) {
                   {item.itemDescription}
                 </p>
                 
-                {!item.completed && (
+                {item.status != 1 && item.status != 2 && (
                   <button
                     onClick={() => handleComplete(item)}
                     className="w-full px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors"

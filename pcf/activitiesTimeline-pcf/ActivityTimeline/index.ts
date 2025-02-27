@@ -60,12 +60,16 @@ export class ActivityTimeline implements ComponentFramework.StandardControl<IInp
                 itemName: record.getValue("subject") as string,
                 plannedDate: record.getValue("scheduledstart") as string,
                 itemDescription: record.getValue("activityadditionalparams") as string,
-                completed: (record.getValue("ismapiprivate") as boolean) || false
+                status: (record.getValue("statecode") as number) 
             };
         });
 
         const root = createRoot(this._container);
-        root.render(React.createElement(App, { localItems: records }));
+        
+        root.render(React.createElement(App, { 
+            localItems: records,
+            updateRecord: this.updateRecord.bind(this)
+        }));
 
     }
 
@@ -73,10 +77,12 @@ export class ActivityTimeline implements ComponentFramework.StandardControl<IInp
      * It is called by the framework prior to a control receiving new data.
      * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as "bound" or "output"
      */
-    public getOutputs(): IOutputs
-    {
-        return {};
+    public getOutputs(): IOutputs {
+        return {
+            DataSet: this._context.parameters.DataSet
+        };
     }
+    
 
     /**
      * Called when the control is to be removed from the DOM tree. Controls should use this call for cleanup.
@@ -87,4 +93,33 @@ export class ActivityTimeline implements ComponentFramework.StandardControl<IInp
         // Add code to cleanup control if necessary
     }
 
+    public async updateRecord(id: string, updatedFields: Partial<LearningPlanItem>): Promise<void> {
+        const dataset = this._context.parameters.DataSet;
+    
+        if (!dataset.records[id]) {
+            console.error("Record not found.");
+            return;
+        }
+    
+        // Prepare the update object
+        const updateData: { [key: string]: any } = {};
+        if (updatedFields.status !== undefined) {
+            updateData["status"] = updatedFields.status; // Ensure 'status' is the exact schema name in Dataverse
+        }
+        if (updatedFields.itemDescription !== undefined) {
+            updateData["itemDescription"] = updatedFields.itemDescription;
+        }
+    
+        try {
+            // Call Dataverse Web API
+            await this._context.webAPI.updateRecord(dataset.getTargetEntityType(), id, updateData);
+            
+            // Notify Power Apps that data has changed
+            this.notifyOutputChanged();
+        } catch (error) {
+            console.error("Error updating record:", error);
+        }
+    }
+    
+    
 }
