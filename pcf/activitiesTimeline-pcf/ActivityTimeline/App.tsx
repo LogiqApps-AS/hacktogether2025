@@ -102,7 +102,7 @@ export function App({ localItems, updateRecord }: AppProps) {
                   )}
                   <div>
                     <h3 className="font-medium text-gray-900">{item.itemName}</h3>
-                    <p className="text-sm text-gray-500">{item.plannedDate}</p>
+                    <p className="text-sm text-gray-500">{item.plannedDate.split("T")[0]}</p>
                   </div>
                 </div>
                 
