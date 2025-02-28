@@ -9,6 +9,7 @@ import OpenQuestion from './OpenQuestion';
 import ProgressBar from './ProgressBar';
 import TestResults from './TestResults';
 import { ArrowLeft, ArrowRight, Shuffle } from 'lucide-react';
+import '../styles/PersonalityTest.css';
 import { useState } from 'react';
 import * as React from 'react';
 
@@ -266,40 +267,36 @@ const PersonalityTest: React.FC = () => {
   }
 
   return (
-    <div className="max-w-2xl mx-auto p-6">
+    <div className="test-container">
       <ProgressBar currentQuestion={(currentPage * questionsPerPage) + 1} totalQuestions={mockQuestions.length} />
       
-      <div className="flex justify-end mb-4">
+      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
         <button
           onClick={populateRandomAnswers}
-          className="flex items-center gap-2 px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 transition-colors"
+          className="test-random-button"
         >
           <Shuffle size={16} />
           Random Answers
         </button>
       </div>
       
-      <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-        <h2 className="text-xl font-semibold mb-6 text-indigo-700">
+      <div className="test-card">
+        <h2 className="test-page-title">
           Page {currentPage + 1} of {totalPages}
         </h2>
         
         {currentPageQuestions.map(question => (
-          <div key={question.id} className="mb-8 pb-6 border-b border-gray-200 last:border-0 last:mb-0 last:pb-0">
+          <div key={question.id} className="test-question">
             {renderQuestion(question)}
           </div>
         ))}
       </div>
       
-      <div className="flex justify-between">
+      <div className="test-controls">
         <button
           onClick={goToPreviousPage}
           disabled={currentPage === 0}
-          className={`flex items-center gap-2 px-4 py-2 rounded-md ${
-            currentPage === 0
-              ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-          }`}
+          className={`test-button test-button-previous ${currentPage === 0 ? 'disabled' : ''}`}
         >
           <ArrowLeft size={16} />
           Previous
@@ -308,11 +305,7 @@ const PersonalityTest: React.FC = () => {
         <button
           onClick={goToNextPage}
           disabled={!isCurrentPageAnswered()}
-          className={`flex items-center gap-2 px-4 py-2 rounded-md ${
-            !isCurrentPageAnswered()
-              ? 'bg-indigo-300 text-white cursor-not-allowed'
-              : 'bg-indigo-600 text-white hover:bg-indigo-700'
-          }`}
+          className={`test-button test-button-next ${!isCurrentPageAnswered() ? 'disabled' : ''}`}
         >
           {currentPage === totalPages - 1 ? 'Complete' : 'Next'}
           {currentPage < totalPages - 1 && <ArrowRight size={16} />}

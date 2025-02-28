@@ -1,0 +1,37 @@
+.options-container {
+    margin-bottom: 2rem;
+  }
+  
+  .options-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .option-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .option-radio {
+    height: 1rem;
+    width: 1rem;
+    color: #4338ca;
+  }
+  
+  .option-radio:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(67, 56, 202, 0.3);
+  }
+  
+  .option-label {
+    margin-left: 0.75rem;
+    font-size: 0.875rem;
+    color: #374151;
+  }

@@ -1,6 +1,6 @@
-
-import * as React from 'react';
 import { IQuestion } from '../types/types';
+import '../styles/DefaultQuestion.css';
+import * as React from 'react';
 
 interface DefaultQuestionProps {
   question: IQuestion;
@@ -14,10 +14,10 @@ const DefaultQuestion: React.FC<DefaultQuestionProps> = ({ question, value, onCh
   };
 
   return (
-    <div className="mb-8">
-      <div className="flex justify-between mb-2 text-sm font-medium">
-        <span className="text-gray-600">{question.textLeft}</span>
-        <span className="text-gray-600">{question.textRight}</span>
+    <div className="question-container">
+      <div className="question-labels">
+        <span className="question-label">{question.textLeft}</span>
+        <span className="question-label">{question.textRight}</span>
       </div>
       <input
         type="range"
@@ -25,11 +25,11 @@ const DefaultQuestion: React.FC<DefaultQuestionProps> = ({ question, value, onCh
         max="7"
         value={value}
         onChange={handleChange}
-        className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+        className="question-slider"
       />
-      <div className="flex justify-between mt-1">
-        <span className="text-xs text-gray-500">Strongly Agree</span>
-        <span className="text-xs text-gray-500">Strongly Disagree</span>
+      <div className="question-scale">
+        <span className="question-scale-label">Strongly Agree</span>
+        <span className="question-scale-label">Strongly Disagree</span>
       </div>
     </div>
   );

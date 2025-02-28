@@ -1,6 +1,7 @@
 import * as React from 'react';
 import PersonalityTest from './components/PersonalityTest';
-import './index.css';
+import './styles/index.css';
+import './styles/App.css';
 
 export interface IMainComponentProps {
   questionsPerPage: number;
@@ -21,13 +22,13 @@ const MainComponent: React.FC<IMainComponentProps> = ({
 }) => {
   return (
     <div style={{ width: '100%' }}>
-      <div className="min-h-screen bg-gray-100 py-8">
-        <div className="max-w-4xl mx-auto px-4">
-          <header className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-indigo-700 mb-2">Personality Assessment</h1>
-            <p className="text-gray-600">Discover your personality traits based on the Big Five model</p>
+      <div className="app-container">
+        <div className="app-content">
+          <header className="app-header">
+            <h1 className="app-title">Personality Assessment</h1>
+            <p className="app-subtitle">Discover your personality traits based on the Big Five model</p>
           </header>
-          
+
           <PersonalityTest />
         </div>
       </div>

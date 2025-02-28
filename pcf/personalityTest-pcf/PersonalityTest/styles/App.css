@@ -1,0 +1,30 @@
+.app-container {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .app-content {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .app-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .app-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #4338ca;
+    margin-bottom: 0.5rem;
+  }
+  
+  .app-subtitle {
+    color: #4b5563;
+  }

@@ -1,5 +1,7 @@
-import * as React from 'react';
+
 import { IQuestion } from '../types/types';
+import '../styles/OptionsQuestion.css';
+import * as React from 'react';
 
 interface OptionsQuestionProps {
   question: IQuestion;
@@ -9,11 +11,11 @@ interface OptionsQuestionProps {
 
 const OptionsQuestion: React.FC<OptionsQuestionProps> = ({ question, value, onChange }) => {
   return (
-    <div className="mb-8">
-      <h3 className="text-lg font-medium mb-4">{question.textLeft}</h3>
-      <div className="space-y-3">
+    <div className="options-container">
+      <h3 className="options-title">{question.textLeft}</h3>
+      <div className="options-list">
         {question.options?.map((option, index) => (
-          <div key={index} className="flex items-center">
+          <div key={index} className="option-item">
             <input
               id={`option-${question.id}-${index}`}
               type="radio"
@@ -21,9 +23,9 @@ const OptionsQuestion: React.FC<OptionsQuestionProps> = ({ question, value, onCh
               value={option}
               checked={value === option}
               onChange={() => onChange(option)}
-              className="h-4 w-4 text-indigo-600 focus:ring-indigo-500"
+              className="option-radio"
             />
-            <label htmlFor={`option-${question.id}-${index}`} className="ml-3 text-sm text-gray-700">
+            <label htmlFor={`option-${question.id}-${index}`} className="option-label">
               {option}
             </label>
           </div>

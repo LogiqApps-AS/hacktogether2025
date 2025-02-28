@@ -37,7 +37,16 @@
       <platform-library name="React" version="16.14.0" />
       <platform-library name="Fluent" version="9.46.2" />
 
-      <css path="../dist/output.css" order="1" />
+      <css path="styles/index.css" order="1" />
+      <css path="styles/App.css" order="2" />
+      <css path="styles/DefaultQuestion.css" order="3" />
+      <css path="styles/MultipleOptionsQuestion.css" order="4" />
+      <css path="styles/OpenQuestion.css" order="5" />
+      <css path="styles/OptionsQuestion.css" order="6" />
+      <css path="styles/PersonalityTest.css" order="7" />
+      <css path="styles/ProgressBar.css" order="8" />
+      <css path="styles/TestResults.css" order="9" />
+      <css path="styles/TraitResult.css" order="10" />
 
       <!-- UNCOMMENT TO ADD MORE RESOURCES
    
