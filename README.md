@@ -1,4 +1,4 @@
-# Personal Development Plan [![GitHub](https://img.shields.io/github/license/LogiqApps-AS/hacktogether2025?style=flat-square)](LICENSE)
+# Personal Development Platform [![GitHub](https://img.shields.io/github/license/LogiqApps-AS/hacktogether2025?style=flat-square)](LICENSE)
 
 Welcome to the Imentiv AI Sync PowerPlatform Connector! This project includes a solution featuring a custom connector component representing ImentivAI API for Power Platform (Power Automate).
 
