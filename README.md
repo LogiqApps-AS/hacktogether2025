@@ -6,6 +6,19 @@ Welcome to the Imentiv AI Sync PowerPlatform Connector! This project includes a 
 
 Traditional Learning Management Systems (LMS) often struggle with low engagement, lack of personalization, and inefficient content delivery. Employees face rigid learning paths that don’t adapt to their individual needs, while organizations struggle to track meaningful progress and measure the real impact of training programs. As businesses evolve, the demand for more intelligent, data-driven, and adaptive learning experiences has never been greater.
 
+## Applies to
+
+![Power Apps](https://img.shields.io/badge/Power%20Apps-Yes-green "Yes")
+![Power Automate](https://img.shields.io/badge/Power%20Automate-Yes-green "Yes")
+![Copilot Studio](https://img.shields.io/badge/Power%20Virtual%20Agents-Yes-green "Yes")
+![Dataverse](https://img.shields.io/badge/Dataverse-Yes-green "Yes")
+![Power Fx](https://img.shields.io/badge/Power%20Fx-Yes-green "Yes")
+![Azure AI](https://img.shields.io/badge/Azure%20AI-Yes-green "Yes")
+
+## Compatibility
+
+![Premium License](https://img.shields.io/badge/Premium%20License-Required-green.svg "Premium license required")
+![Experimental Features](https://img.shields.io/badge/Experimental%20Features-Yes-green.svg "Does rely on experimental features")
 ## Repository structure
 
 - PCF: contains pcf controls:
