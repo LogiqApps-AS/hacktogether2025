@@ -1,7 +1,6 @@
-# Personal Development Platform [![GitHub](https://img.shields.io/github/license/LogiqApps-AS/hacktogether2025?style=flat-square)](LICENSE)
+# AI Powered Employee Development Platform [![GitHub](https://img.shields.io/github/license/LogiqApps-AS/hacktogether2025?style=flat-square)](LICENSE)
 
-Welcome to the Imentiv AI Sync PowerPlatform Connector! This project includes a solution featuring a custom connector component representing ImentivAI API for Power Platform (Power Automate).
-
+Welcome to the AI Powered Employee Development Platform ! A next-generation solution designed to make learning more dynamic, personalized, and outcome-driven.
 ## 🌟 Overview
 
 Traditional Learning Management Systems (LMS) often struggle with low engagement, lack of personalization, and inefficient content delivery. Employees face rigid learning paths that don’t adapt to their individual needs, while organizations struggle to track meaningful progress and measure the real impact of training programs. As businesses evolve, the demand for more intelligent, data-driven, and adaptive learning experiences has never been greater.
