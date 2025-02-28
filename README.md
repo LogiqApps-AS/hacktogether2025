@@ -23,19 +23,25 @@ Traditional Learning Management Systems (LMS) often struggle with low engagement
 
 ![Premium License](https://img.shields.io/badge/Premium%20License-Required-pink.svg "Premium license required")
 ![Experimental Features](https://img.shields.io/badge/Experimental%20Features-Yes-pink.svg "Does rely on experimental features")
-## Repository structure
 
+## Repository structure
 - PCF: contains pcf controls:
-  - `ActivityTimeline`
-  - `PersonalityTest`
-  - `package`: contains a package for the pcf controls
+  - `ActivityTimeline`: Implementation of the visual presentation of the learning plan activities 
+  - `PersonalityTest`: Implementation of the personality test
+  - `package`: Contains a package for the pcf controls
 
 - Solutions:
   - `LogiqAppsEP`: Employee Portal 
-  - `LogiqAppsPDP`: Maker portal for the  
+  - `LogiqAppsPDP`: Maker portal for the
+
+## How to install
+1. Download the solutions from the `Release` section of the current repository
+2. Install solutions in the following order:
+   - LogiqApps.PDP.PCF
+   - LogiqApps.PDP
+   - LogiqApps.EP
 
 ## 🚀 Releases
-
 The release section of the GitHub repository contains the latest releases.
 
 ### How to build a new release?
