@@ -16,8 +16,8 @@ Traditional Learning Management Systems (LMS) often struggle with low engagement
 
 ## Compatibility
 
-![Premium License](https://img.shields.io/badge/Premium%20License-Required-green.svg "Premium license required")
-![Experimental Features](https://img.shields.io/badge/Experimental%20Features-Yes-green.svg "Does rely on experimental features")
+![Premium License](https://img.shields.io/badge/Premium%20License-Required-pink.svg "Premium license required")
+![Experimental Features](https://img.shields.io/badge/Experimental%20Features-Yes-pink.svg "Does rely on experimental features")
 ## Repository structure
 
 - PCF: contains pcf controls:
