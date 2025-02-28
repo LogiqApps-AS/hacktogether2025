@@ -1,6 +1,6 @@
 # AI Powered Employee Development Platform 
 
-Welcome to the AI Powered Employee Development Platform ! A next-generation solution designed to make learning more dynamic, personalized, and outcome-driven.
+Welcome to the AI Powered Employee Development Platform ! A next-generation solution designed to make learning more dynamic, personalized, and outcome-driven...
 ## 🌟 Overview
 
 Traditional Learning Management Systems (LMS) often struggle with low engagement, lack of personalization, and inefficient content delivery. Employees face rigid learning paths that don’t adapt to their individual needs, while organizations struggle to track meaningful progress and measure the real impact of training programs. As businesses evolve, the demand for more intelligent, data-driven, and adaptive learning experiences has never been greater.
