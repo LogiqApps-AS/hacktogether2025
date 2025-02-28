@@ -9,7 +9,7 @@ Traditional Learning Management Systems (LMS) often struggle with low engagement
 
 ![Power Apps](https://img.shields.io/badge/Power%20Apps-Yes-pink "Yes")
 ![Power Automate](https://img.shields.io/badge/Power%20Automate-Yes-pink "Yes")
-![Copilot Studio](https://img.shields.io/badge/Power%20Virtual%20Agents-Yes-pink "Yes")
+![Copilot Studio](https://img.shields.io/badge/Copilot-Yes-pink "Yes")
 ![Dataverse](https://img.shields.io/badge/Dataverse-Yes-pink "Yes")
 ![Power Fx](https://img.shields.io/badge/Power%20Fx-Yes-pink "Yes")
 ![Azure AI](https://img.shields.io/badge/Azure%20AI-Yes-pink "Yes")
