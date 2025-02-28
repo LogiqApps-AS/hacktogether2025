@@ -1,4 +1,4 @@
-# AI Powered Employee Development Platform [![GitHub](https://img.shields.io/github/license/LogiqApps-AS/hacktogether2025?style=flat-square)](LICENSE)
+# AI Powered Employee Development Platform 
 
 Welcome to the AI Powered Employee Development Platform ! A next-generation solution designed to make learning more dynamic, personalized, and outcome-driven.
 ## 🌟 Overview
