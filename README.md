@@ -13,9 +13,7 @@ Traditional Learning Management Systems (LMS) often struggle with low engagement
 ![Dataverse](https://img.shields.io/badge/Dataverse-Yes-pink "Yes")
 ![Power Fx](https://img.shields.io/badge/Power%20Fx-Yes-pink "Yes")
 ![Azure AI](https://img.shields.io/badge/Azure%20AI-Yes-pink "Yes")
-![Power Pages](https://img.shields.io/badge/Power%20Pages-Yes-pink "Yes")
 ![AI Builder](https://img.shields.io/badge/AI%20Builder-Yes-pink "Yes")
-![Microsoft 365 Agents SDK](https://img.shields.io/badge/Microsoft%20365%20Agents-Yes-pink "Yes")
 ![TypeScript](https://img.shields.io/badge/TypeScript-Yes-pink "Yes")
 
 
