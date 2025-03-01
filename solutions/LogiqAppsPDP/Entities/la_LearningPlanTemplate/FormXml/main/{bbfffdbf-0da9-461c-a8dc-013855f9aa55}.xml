@@ -12,7 +12,7 @@
             <label description="General" languagecode="1033" />
           </labels>
           <columns>
-            <column width="100%">
+            <column width="50%">
               <sections>
                 <section showlabel="false" showbar="false" IsUserDefined="0" id="{e1cbb18a-876b-45a2-9964-f8e2ceb56eda}" columns="11">
                   <labels>
@@ -26,7 +26,7 @@
                         </labels>
                         <control id="la_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="la_name" />
                       </cell>
-                      <cell locklevel="0" id="{2d9eb4a0-ab5d-49f6-94f9-d396cb2179ce}">
+                      <cell locklevel="0" id="{2d9eb4a0-ab5d-49f6-94f9-d396cb2179ce}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -39,7 +39,7 @@
                         </labels>
                         <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                       </cell>
-                      <cell locklevel="0" id="{9e0e8bde-c5a2-46ed-8bea-4ceabb101314}">
+                      <cell locklevel="0" id="{9e0e8bde-c5a2-46ed-8bea-4ceabb101314}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -52,10 +52,79 @@
                         </labels>
                         <control id="la_level" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="la_level" disabled="false" uniqueid="{d3100a60-0a82-419d-bed8-b6b7f42d13d5}" />
                       </cell>
-                      <cell locklevel="0" id="{659ac64d-c160-4294-9f0e-15926de2f4f2}">
+                      <cell locklevel="0" id="{659ac64d-c160-4294-9f0e-15926de2f4f2}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="_section_835" id="60355ff8-c28c-41dc-8791-f6f2ce9f6690" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Questions" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7bfaea9b-5dd7-40ba-a09a-4c074230c888}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{c58e1469-cc02-4564-9d79-02dc086e7486}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1740673447638" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>la_learningplanitemtemplate_LearningPlanTemplateId_la_learningplantemplate</RelationshipName>
+                            <TargetEntityType>la_learningplanitemtemplate</TargetEntityType>
+                            <ViewId>{90A4A1C0-3543-42CE-9BB0-0ECACA2FD3DD}</ViewId>
+                            <ViewIds>{90A4A1C0-3543-42CE-9BB0-0ECACA2FD3DD}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="da2b21c5-9d0b-4b16-8757-5b06fd0789d9" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="🤖AI Helper" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" id="19ba270b-25aa-4f7e-96b7-db837be25361" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Unload PDF file to generate a learning Plan template using AI" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{39101d41-b4c2-4b52-8cc1-1a82ed3be565}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="la_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="la_name" disabled="false" uniqueid="{bac6340b-2864-4144-8c2f-d6b5c79dc1c4}" />
                       </cell>
                     </row>
                   </rows>
@@ -107,9 +176,6 @@
           </row>
         </rows>
       </footer>
-      <DisplayConditions Order="0" FallbackForm="true">
-        <Everyone />
-      </DisplayConditions>
       <controlDescriptions>
         <controlDescription forControl="{d3100a60-0a82-419d-bed8-b6b7f42d13d5}">
           <customControl id="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}">
@@ -133,7 +199,60 @@
             </parameters>
           </customControl>
         </controlDescription>
+        <controlDescription forControl="{bac6340b-2864-4144-8c2f-d6b5c79dc1c4}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" formFactor="0">
+            <parameters>
+              <datafieldname>la_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" formFactor="1">
+            <parameters>
+              <datafieldname>la_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Canvas.CanvasControl">
+            <parameters>
+              <record type="Currency">la_name</record>
+              <entityName type="SingleLine.Text" static="true">la_learningplantemplate</entityName>
+              <appName type="SingleLine.Text" static="true">la_learningplantemplate</appName>
+              <appId type="SingleLine.Text" static="true">f526ed35-548f-42a2-910e-4c77c72b0293</appId>
+            </parameters>
+          </customControl>
+        </controlDescription>
       </controlDescriptions>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

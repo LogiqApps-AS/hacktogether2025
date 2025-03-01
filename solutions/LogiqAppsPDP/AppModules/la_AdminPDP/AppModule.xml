@@ -2,10 +2,11 @@
 <AppModule>
   <UniqueName>la_AdminPDP</UniqueName>
   <IntroducedVersion>1.0.0.0</IntroducedVersion>
-  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <WebResourceId>3d29d3eb-2bf5-ef11-be1f-7c1e528769d7</WebResourceId>
   <OptimizedFor></OptimizedFor>
   <statecode>0</statecode>
   <statuscode>1</statuscode>
+  <WelcomePageId>b6bf15ba-2ff5-ef11-be1f-7c1e528769d7</WelcomePageId>
   <FormFactor>1</FormFactor>
   <ClientType>4</ClientType>
   <NavigationType>0</NavigationType>
@@ -41,6 +42,15 @@
   <Descriptions>
     <Description description="Empower your business users to efficiently manage and customize learning plans and templates with Admin PDP. Streamline administrative tasks and enhance productivity through a centralized platform designed for seamless learning plan administration." languagecode="1033" />
   </Descriptions>
+  <appelements>
+    <appelement uniquename="la_la_AdminPDP_canvasappid_la_learningplanaigeneratorpage_b879b">
+      <canvasappid>
+        <name>la_learningplanaigeneratorpage_b879b</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>la_la_AdminPDP_canvasappid_la_learningplanaigeneratorpage_b879b</name>
+    </appelement>
+  </appelements>
   <appsettings>
     <appsetting settingdefinitionid.uniquename="AppChannel">
       <iscustomizable>1</iscustomizable>

@@ -48,6 +48,7 @@
   <EntityRelationship Name="la_learningplan_UserProfileId_la_userprofile" />
   <EntityRelationship Name="la_learningplanitem_LearningPlanId_la_learningplan" />
   <EntityRelationship Name="la_learningplanitem_LearningPlanItemTemplateId_la_learningplanitemtemplate" />
+  <EntityRelationship Name="la_learningplanitemtemplate_LearningPlanTemplateId_la_learningplantemplate" />
   <EntityRelationship Name="la_personalitytestresult_PersonalityTestId_la_personalitytest" />
   <EntityRelationship Name="la_skills_ParentSkillId_la_skills" />
   <EntityRelationship Name="la_skills_SkillAreaId_la_skillarea" />

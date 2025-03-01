@@ -18,6 +18,11 @@
         <SubArea Id="subarea_aca59abd" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="la_learningplanitem" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
         <SubArea Id="subarea_4e053436" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="la_learningplanitemtemplate" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
         <SubArea Id="subarea_11e561e4" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="la_learningplantemplate" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="subarea_3ee20d9e" Icon="/_imgs/imagestrips/transparent_spacer.gif" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" Page="la_learningplanaigeneratorpage_b879b">
+          <Titles>
+            <Title LCID="1033" Title="Learning Plan AI Generator Page" />
+          </Titles>
+        </SubArea>
       </Group>
       <Group Id="group_e93fe567" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown">
         <Titles>

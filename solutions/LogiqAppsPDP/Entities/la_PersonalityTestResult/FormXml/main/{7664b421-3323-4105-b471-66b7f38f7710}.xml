@@ -7,7 +7,7 @@
     <FormActivationState>1</FormActivationState>
     <form headerdensity="HighWithControls">
       <tabs>
-        <tab verticallayout="true" id="{aace11c5-3369-422c-a714-f711537dbf29}" IsUserDefined="1">
+        <tab verticallayout="true" id="{aace11c5-3369-422c-a714-f711537dbf29}" IsUserDefined="1" name="tab-general">
           <labels>
             <label description="General" languagecode="1033" />
           </labels>
@@ -35,12 +35,20 @@
                         <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                       </cell>
                     </row>
+                  </rows>
+                </section>
+                <section name="null_section_3" id="46005585-9395-4e6b-8ad8-322619a05e0c" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Test" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
                     <row>
-                      <cell id="{fdec151b-8d94-4953-8f7d-b89ff78af739}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
+                      <cell id="{b884c293-ad2c-4a09-9863-3ce5de265d46}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
                         <labels>
                           <label description="Name" languagecode="1033" />
                         </labels>
-                        <control id="la_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="la_name" disabled="false" uniqueid="{d6d1020d-2805-4ca1-b5a9-226ab73dab40}" />
+                        <control id="la_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="la_name" disabled="false" uniqueid="{bb16009c-6be6-4255-8528-f5940d9a7dd5}" />
                       </cell>
                     </row>
                   </rows>
@@ -96,7 +104,7 @@
         <Everyone />
       </DisplayConditions>
       <controlDescriptions>
-        <controlDescription forControl="{d6d1020d-2805-4ca1-b5a9-226ab73dab40}">
+        <controlDescription forControl="{bb16009c-6be6-4255-8528-f5940d9a7dd5}">
           <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
             <parameters>
               <datafieldname>la_name</datafieldname>
@@ -105,16 +113,22 @@
           <customControl formFactor="0" name="la_LA.PersonalityTest">
             <parameters>
               <sampleProperty type="SingleLine.Text">la_name</sampleProperty>
+              <result type="Multiple">la_testresult</result>
+              <status type="OptionSet">statuscode</status>
             </parameters>
           </customControl>
           <customControl formFactor="2" name="la_LA.PersonalityTest">
             <parameters>
               <sampleProperty type="SingleLine.Text">la_name</sampleProperty>
+              <result type="Multiple">la_testresult</result>
+              <status type="OptionSet">statuscode</status>
             </parameters>
           </customControl>
           <customControl formFactor="1" name="la_LA.PersonalityTest">
             <parameters>
               <sampleProperty type="SingleLine.Text">la_name</sampleProperty>
+              <result type="Multiple">la_testresult</result>
+              <status type="OptionSet">statuscode</status>
             </parameters>
           </customControl>
         </controlDescription>

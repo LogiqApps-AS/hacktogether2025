@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{f40a721b-49f5-ef11-be1f-7c1e528769d7}</WebResourceId>
+  <Name>la_/pdp/appHeaderColor.xml</Name>
+  <DisplayName>la_/pdp/appHeaderColor.xml</DisplayName>
+  <WebResourceType>4</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/la_pdpappHeaderColorxmlF40A721B-49F5-EF11-BE1F-7C1E528769D7</FileName>
+</WebResource>
