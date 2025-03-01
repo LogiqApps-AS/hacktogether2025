@@ -22,6 +22,7 @@
   <EntityRelationship Name="bookableresourcebooking_la_UserActivities" />
   <EntityRelationship Name="bookableresourcebookingheader_la_UserActivities" />
   <EntityRelationship Name="bulkoperation_la_UserActivities" />
+  <EntityRelationship Name="business_unit_la_personalitytest" />
   <EntityRelationship Name="business_unit_la_setting" />
   <EntityRelationship Name="campaign_la_UserActivities" />
   <EntityRelationship Name="campaignactivity_la_UserActivities" />
@@ -45,6 +46,8 @@
   <EntityRelationship Name="la_useractivity_systemuser_owninguser" />
   <EntityRelationship Name="la_useractivity_team_owningteam" />
   <EntityRelationship Name="lead_la_UserActivities" />
+  <EntityRelationship Name="lk_la_personalitytest_createdby" />
+  <EntityRelationship Name="lk_la_personalitytest_modifiedby" />
   <EntityRelationship Name="lk_la_setting_createdby" />
   <EntityRelationship Name="lk_la_setting_modifiedby" />
   <EntityRelationship Name="msdyn_appconfiguration_systemuser" />
@@ -75,11 +78,14 @@
   <EntityRelationship Name="mspp_shortcut_la_UserActivities" />
   <EntityRelationship Name="mspp_website_la_UserActivities" />
   <EntityRelationship Name="opportunity_la_UserActivities" />
+  <EntityRelationship Name="owner_la_personalitytest" />
   <EntityRelationship Name="owner_la_setting" />
   <EntityRelationship Name="powerpagecomponent_webrole_systemuser" />
   <EntityRelationship Name="quote_la_UserActivities" />
   <EntityRelationship Name="salesorder_la_UserActivities" />
   <EntityRelationship Name="site_la_UserActivities" />
+  <EntityRelationship Name="team_la_personalitytest" />
   <EntityRelationship Name="team_la_setting" />
+  <EntityRelationship Name="user_la_personalitytest" />
   <EntityRelationship Name="user_la_setting" />
 </EntityRelationships>

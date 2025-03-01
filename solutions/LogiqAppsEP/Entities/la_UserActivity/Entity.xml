@@ -2863,4 +2863,33 @@
   <FormXml />
   <SavedQueries />
   <RibbonDiffXml />
+  <CustomControlDefaultConfigs>
+    <CustomControlDefaultConfig>
+      <ControlDescriptionXML>
+        <controlDescriptions>
+          <controlDescription>
+            <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+              <parameters />
+            </customControl>
+            <customControl formFactor="0" name="la_LA.ActivityTimeline">
+              <parameters>
+                <data-set name="DataSet" />
+              </parameters>
+            </customControl>
+            <customControl formFactor="1" name="la_LA.ActivityTimeline">
+              <parameters>
+                <data-set name="DataSet" />
+              </parameters>
+            </customControl>
+            <customControl formFactor="2" name="la_LA.ActivityTimeline">
+              <parameters>
+                <data-set name="DataSet" />
+              </parameters>
+            </customControl>
+          </controlDescription>
+        </controlDescriptions>
+      </ControlDescriptionXML>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    </CustomControlDefaultConfig>
+  </CustomControlDefaultConfigs>
 </Entity>

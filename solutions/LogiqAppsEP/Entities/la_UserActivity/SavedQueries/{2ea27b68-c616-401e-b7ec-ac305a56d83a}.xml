@@ -17,6 +17,7 @@
           <cell name="scheduledstart" width="104" />
           <cell name="actualstart" width="113" />
           <cell name="la_activitypriority" width="133" />
+          <cell name="activityadditionalparams" width="226" />
         </row>
       </grid>
     </layoutxml>
@@ -28,12 +29,6 @@
           <attribute name="subject" />
           <attribute name="createdon" />
           <order attribute="subject" descending="false" />
-          <filter type="and">
-            <condition attribute="statecode" operator="in">
-              <value>0</value>
-              <value>3</value>
-            </condition>
-          </filter>
           <link-entity name="activityparty" from="activityid" to="activityid" alias="aa">
             <filter type="and">
               <condition attribute="partyid" operator="eq-userid" />
@@ -44,6 +39,7 @@
           <attribute name="actualstart" />
           <attribute name="activitytypecode" />
           <attribute name="la_activitypriority" />
+          <attribute name="activityadditionalparams" />
         </entity>
       </fetch>
     </fetchxml>

@@ -2,15 +2,17 @@
 <AppModule>
   <UniqueName>la_EmployeePortal</UniqueName>
   <IntroducedVersion>1.0.0.0</IntroducedVersion>
-  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <WebResourceId>0e286688-2bf5-ef11-be1f-7c1e52768624</WebResourceId>
   <OptimizedFor></OptimizedFor>
   <statecode>0</statecode>
   <statuscode>1</statuscode>
+  <WelcomePageId>b24fcd15-e5f5-ef11-be1f-7c1e52885535</WelcomePageId>
   <FormFactor>1</FormFactor>
   <ClientType>4</ClientType>
   <NavigationType>0</NavigationType>
   <AppModuleComponents>
     <AppModuleComponent type="1" schemaName="adx_setting" />
+    <AppModuleComponent type="1" schemaName="la_personalitytest" />
     <AppModuleComponent type="1" schemaName="la_setting" />
     <AppModuleComponent type="1" schemaName="la_useractivity" />
     <AppModuleComponent type="62" schemaName="la_EmployeePortal" />
