@@ -24,7 +24,7 @@
             <Title LCID="1033" Title="Learning Home" />
           </Titles>
         </SubArea>
-        <SubArea Id="subarea_e9106498" VectorIcon="/WebResources/cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" Icon="/WebResources/cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" Entity="la_useractivity" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
+        <SubArea Id="subarea_e9106498" VectorIcon="" Icon="" Entity="la_useractivity" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA">
           <Titles>
             <Title LCID="1033" Title="My Activities" />
           </Titles>

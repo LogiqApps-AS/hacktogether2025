@@ -96,7 +96,6 @@
       <RootComponent type="1" schemaName="systemuser" behavior="2" />
       <RootComponent type="300" schemaName="la_learningplanaigenerator_fbf46" behavior="0" />
       <RootComponent type="300" schemaName="la_learningplanaigeneratorpage_b879b" behavior="0" />
-      <RootComponent type="61" schemaName="cc_MscrmControls.AcceleratedSales.SalesAccelerationSettingsControl/Images/TaskList_D365.svg" behavior="0" />
       <RootComponent type="61" schemaName="la_/ep/css/personalityTest.css" behavior="0" />
       <RootComponent type="61" schemaName="la_/ep/html/personalityTest.htm" behavior="0" />
       <RootComponent type="61" schemaName="la_/ep/js/personalityTest.js" behavior="0" />
