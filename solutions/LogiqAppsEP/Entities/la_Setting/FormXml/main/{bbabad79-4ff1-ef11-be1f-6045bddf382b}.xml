@@ -20,14 +20,6 @@
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{7d861a2c-519b-4d01-9204-b68eba88fb55}" locklevel="0" colspan="1" rowspan="1" visible="true" showlabel="false" labelid="{d03eae4b-9173-4db6-bda1-6a60e1735edc}">
-                        <labels>
-                          <label description="Name" languagecode="1033" />
-                        </labels>
-                        <control id="la_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="la_name" disabled="false" uniqueid="{3ee82e56-37af-4ed2-80e7-8788f894aa35}" />
-                      </cell>
-                    </row>
-                    <row>
                       <cell id="{25d93dce-c24f-459c-bec1-dc10db2f6656}" labelid="{533f0b9f-3f24-4779-a165-358c909ef330}">
                         <labels>
                           <label description="Name" languagecode="1033" />
@@ -108,30 +100,7 @@
         <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
         <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
       </DisplayConditions>
-      <controlDescriptions>
-        <controlDescription forControl="{3ee82e56-37af-4ed2-80e7-8788f894aa35}">
-          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
-            <parameters>
-              <datafieldname>la_name</datafieldname>
-            </parameters>
-          </customControl>
-          <customControl formFactor="0" name="log_LQA.Avatar">
-            <parameters>
-              <subscriptionKey type="SingleLine.Text">la_name</subscriptionKey>
-            </parameters>
-          </customControl>
-          <customControl formFactor="2" name="log_LQA.Avatar">
-            <parameters>
-              <subscriptionKey type="SingleLine.Text">la_name</subscriptionKey>
-            </parameters>
-          </customControl>
-          <customControl formFactor="1" name="log_LQA.Avatar">
-            <parameters>
-              <subscriptionKey type="SingleLine.Text">la_name</subscriptionKey>
-            </parameters>
-          </customControl>
-        </controlDescription>
-      </controlDescriptions>
+      <controlDescriptions />
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>
